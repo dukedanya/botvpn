@@ -1,0 +1,2098 @@
+2026-03-23 19:38:08,830 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 19:38:08,889 - INFO - __main__ - Бот запущен
+2026-03-23 19:38:08,890 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 19:38:08,907 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 19:38:16,948 - INFO - aiogram.event - Update id=902943238 is not handled. Duration 0 ms by bot id=8657485502
+2026-03-23 19:38:16,948 - ERROR - aiogram.event - Cause exception while process update id=902943238 by bot id=8657485502
+NameError: name 'db' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 75, in profile_menu
+    await db.add_user(user_id)
+NameError: name 'db' is not defined
+2026-03-23 19:38:40,764 - INFO - aiogram.event - Update id=902943239 is not handled. Duration 0 ms by bot id=8657485502
+2026-03-23 19:38:40,764 - ERROR - aiogram.event - Cause exception while process update id=902943239 by bot id=8657485502
+NameError: name 'db' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 151, in subscriptions_menu
+    await db.add_user(user_id)
+NameError: name 'db' is not defined
+2026-03-23 19:38:41,853 - INFO - aiogram.event - Update id=902943240 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 19:38:41,853 - ERROR - aiogram.event - Cause exception while process update id=902943240 by bot id=8657485502
+NameError: name 'bot' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 218, in channel_link
+    await replace_message(user_id, text, reply_markup=keyboard, delete_user_msg=message)
+  File "/root/kakoi/utils/helpers.py", line 31, in replace_message
+    msg = await bot.send_message(
+NameError: name 'bot' is not defined
+2026-03-23 19:38:42,978 - INFO - aiogram.event - Update id=902943241 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 19:38:42,978 - ERROR - aiogram.event - Cause exception while process update id=902943241 by bot id=8657485502
+NameError: name 'bot' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 230, in reviews_link
+    await replace_message(user_id, text, reply_markup=keyboard, delete_user_msg=message)
+  File "/root/kakoi/utils/helpers.py", line 31, in replace_message
+    msg = await bot.send_message(
+NameError: name 'bot' is not defined
+2026-03-23 19:39:49,707 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 19:39:49,707 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 19:39:49,707 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 19:42:26,107 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 19:42:26,168 - INFO - __main__ - Бот запущен
+2026-03-23 19:42:26,169 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 19:42:26,187 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 19:42:32,123 - INFO - aiogram.event - Update id=902943242 is not handled. Duration 3 ms by bot id=8657485502
+2026-03-23 19:42:32,123 - ERROR - aiogram.event - Cause exception while process update id=902943242 by bot id=8657485502
+NameError: name 'db' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 79, in profile_menu
+    active_sub = await is_active_subscription(user_id)
+  File "/root/kakoi/services/subscriptions.py", line 70, in is_active_subscription
+    user = await db.get_user(user_id)
+NameError: name 'db' is not defined
+2026-03-23 19:46:23,792 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 19:46:23,792 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 19:46:23,793 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 19:47:00,202 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 19:47:00,250 - INFO - __main__ - Бот запущен
+2026-03-23 19:47:00,251 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 19:47:00,264 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 19:47:06,322 - INFO - aiogram.event - Update id=902943243 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 19:47:06,323 - ERROR - aiogram.event - Cause exception while process update id=902943243 by bot id=8657485502
+NameError: name 'bot' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 91, in profile_menu
+    await replace_message(user_id, text, reply_markup=profile_keyboard(active_sub), delete_user_msg=message)
+  File "/root/kakoi/utils/helpers.py", line 31, in replace_message
+    msg = await bot.send_message(
+NameError: name 'bot' is not defined
+2026-03-23 19:47:41,633 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 19:47:41,634 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 19:47:41,634 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 19:51:34,160 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 19:51:34,227 - INFO - __main__ - Бот запущен
+2026-03-23 19:51:34,228 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 19:51:34,253 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 19:51:45,023 - INFO - aiogram.event - Update id=902943244 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 19:51:45,023 - ERROR - aiogram.event - Cause exception while process update id=902943244 by bot id=8657485502
+NameError: name 'bot' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 91, in profile_menu
+    await replace_message(bot, user_id, text, reply_markup=profile_keyboard(active_sub), delete_user_msg=message)
+NameError: name 'bot' is not defined
+2026-03-23 19:54:10,541 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 19:54:10,542 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 19:54:10,542 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 19:57:58,489 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 19:57:58,566 - INFO - __main__ - Бот запущен
+2026-03-23 19:57:58,567 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 19:57:58,584 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 19:58:02,943 - INFO - aiogram.event - Update id=902943245 is handled. Duration 202 ms by bot id=8657485502
+2026-03-23 19:58:07,839 - INFO - aiogram.event - Update id=902943246 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 19:58:07,839 - ERROR - aiogram.event - Cause exception while process update id=902943246 by bot id=8657485502
+TypeError: show_main_menu() missing 1 required positional argument: 'db'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 248, in back_to_main
+    await show_main_menu(message.from_user.id, delete_user_msg=message)
+TypeError: show_main_menu() missing 1 required positional argument: 'db'
+2026-03-23 19:58:53,596 - INFO - aiogram.event - Update id=902943247 is not handled. Duration 2 ms by bot id=8657485502
+2026-03-23 19:58:53,597 - ERROR - aiogram.event - Cause exception while process update id=902943247 by bot id=8657485502
+NameError: name 'show_plans_list' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/buy.py", line 43, in buy_subscription_menu
+    await show_plans_list(user_id, user_msg=message)
+NameError: name 'show_plans_list' is not defined
+2026-03-23 20:02:09,447 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:02:09,447 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:02:09,447 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:02:51,140 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:02:51,230 - INFO - __main__ - Бот запущен
+2026-03-23 20:02:51,230 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:02:51,246 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:03:01,600 - INFO - aiogram.event - Update id=902943248 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 20:03:01,600 - ERROR - aiogram.event - Cause exception while process update id=902943248 by bot id=8657485502
+NameError: name 'generate_ref_code' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 43, in cmd_start
+    await db.ensure_ref_code(user_id)
+  File "/root/kakoi/db/database.py", line 304, in ensure_ref_code
+    code = generate_ref_code()
+NameError: name 'generate_ref_code' is not defined
+2026-03-23 20:03:08,561 - INFO - aiogram.event - Update id=902943249 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 20:03:08,561 - ERROR - aiogram.event - Cause exception while process update id=902943249 by bot id=8657485502
+NameError: name 'show_plans_list' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/buy.py", line 43, in buy_subscription_menu
+    await show_plans_list(user_id, user_msg=message)
+NameError: name 'show_plans_list' is not defined
+2026-03-23 20:03:09,316 - INFO - aiogram.event - Update id=902943250 is not handled. Duration 2 ms by bot id=8657485502
+2026-03-23 20:03:09,317 - ERROR - aiogram.event - Cause exception while process update id=902943250 by bot id=8657485502
+NameError: name 'generate_ref_code' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/referral.py", line 42, in referral_menu
+    await show_referral_menu(user_id, message)
+  File "/root/kakoi/handlers/referral.py", line 96, in show_referral_menu
+    ref_code = await db.ensure_ref_code(user_id)
+  File "/root/kakoi/db/database.py", line 304, in ensure_ref_code
+    code = generate_ref_code()
+NameError: name 'generate_ref_code' is not defined
+2026-03-23 20:03:09,976 - INFO - aiogram.event - Update id=902943251 is handled. Duration 109 ms by bot id=8657485502
+2026-03-23 20:03:44,650 - INFO - aiogram.event - Update id=902943252 is handled. Duration 199 ms by bot id=8657485502
+2026-03-23 20:03:47,715 - INFO - aiogram.event - Update id=902943253 is handled. Duration 249 ms by bot id=8657485502
+2026-03-23 20:03:49,340 - INFO - aiogram.event - Update id=902943254 is handled. Duration 345 ms by bot id=8657485502
+2026-03-23 20:03:51,719 - INFO - aiogram.middlewares - Answer to callback query id=3412005762347837862
+2026-03-23 20:03:51,743 - INFO - aiogram.event - Update id=902943255 is handled. Duration 125 ms by bot id=8657485502
+2026-03-23 20:03:53,060 - INFO - aiogram.event - Update id=902943256 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 20:03:53,060 - ERROR - aiogram.event - Cause exception while process update id=902943256 by bot id=8657485502
+NameError: name 'panel' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 156, in subscriptions_menu
+    active = await is_active_subscription(user_id, db=db, panel=panel)
+NameError: name 'panel' is not defined
+2026-03-23 20:05:10,394 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:05:10,394 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:05:10,395 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:06:13,281 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:06:13,349 - INFO - __main__ - Бот запущен
+2026-03-23 20:06:13,349 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:06:13,362 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:06:16,214 - INFO - aiogram.event - Update id=902943257 is handled. Duration 101 ms by bot id=8657485502
+2026-03-23 20:06:17,838 - INFO - aiogram.event - Update id=902943258 is handled. Duration 81 ms by bot id=8657485502
+2026-03-23 20:06:18,851 - INFO - aiogram.event - Update id=902943259 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 20:06:18,851 - ERROR - aiogram.event - Cause exception while process update id=902943259 by bot id=8657485502
+NameError: name 'panel' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 156, in subscriptions_menu
+    active = await is_active_subscription(user_id, db=db, panel=panel)
+NameError: name 'panel' is not defined
+2026-03-23 20:07:59,936 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:07:59,937 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:07:59,937 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:08:04,712 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:08:04,774 - INFO - __main__ - Бот запущен
+2026-03-23 20:08:04,774 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:08:04,786 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:08:11,777 - INFO - aiogram.event - Update id=902943260 is handled. Duration 110 ms by bot id=8657485502
+2026-03-23 20:08:16,139 - INFO - aiogram.event - Update id=902943261 is handled. Duration 85 ms by bot id=8657485502
+2026-03-23 20:08:17,007 - INFO - aiogram.event - Update id=902943262 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 20:08:17,007 - ERROR - aiogram.event - Cause exception while process update id=902943262 by bot id=8657485502
+NameError: name 'panel' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 156, in subscriptions_menu
+    active = await is_active_subscription(user_id, db=db, panel=panel)
+NameError: name 'panel' is not defined
+2026-03-23 20:08:20,101 - INFO - aiogram.event - Update id=902943263 is handled. Duration 185 ms by bot id=8657485502
+2026-03-23 20:08:23,494 - INFO - aiogram.event - Update id=902943264 is handled. Duration 202 ms by bot id=8657485502
+2026-03-23 20:08:24,377 - INFO - aiogram.event - Update id=902943265 is handled. Duration 94 ms by bot id=8657485502
+2026-03-23 20:08:29,830 - INFO - aiogram.middlewares - Answer to callback query id=3412005759380321506
+2026-03-23 20:08:29,853 - INFO - aiogram.event - Update id=902943266 is handled. Duration 121 ms by bot id=8657485502
+2026-03-23 20:08:32,285 - INFO - aiogram.event - Update id=902943267 is handled. Duration 155 ms by bot id=8657485502
+2026-03-23 20:08:33,619 - INFO - aiogram.event - Update id=902943268 is handled. Duration 159 ms by bot id=8657485502
+2026-03-23 20:08:34,693 - INFO - aiogram.event - Update id=902943269 is handled. Duration 305 ms by bot id=8657485502
+2026-03-23 20:08:35,856 - INFO - aiogram.event - Update id=902943270 is not handled. Duration 4 ms by bot id=8657485502
+2026-03-23 20:08:35,857 - ERROR - aiogram.event - Cause exception while process update id=902943270 by bot id=8657485502
+NameError: name 'get_ref_link' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/referral.py", line 42, in referral_menu
+    await show_referral_menu(user_id, message)
+  File "/root/kakoi/handlers/referral.py", line 102, in show_referral_menu
+    link = get_ref_link(ref_code, system_type)
+NameError: name 'get_ref_link' is not defined
+2026-03-23 20:08:46,754 - INFO - aiogram.event - Update id=902943271 is not handled. Duration 2 ms by bot id=8657485502
+2026-03-23 20:08:46,754 - ERROR - aiogram.event - Cause exception while process update id=902943271 by bot id=8657485502
+NameError: name 'get_bot' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/buy.py", line 44, in show_plans_list
+    bot = get_bot()
+NameError: name 'get_bot' is not defined
+2026-03-23 20:12:15,239 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:12:15,239 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:12:15,240 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:14:16,381 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:14:16,456 - INFO - __main__ - Бот запущен
+2026-03-23 20:14:16,457 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:14:16,472 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:14:20,361 - INFO - aiogram.event - Update id=902943272 is handled. Duration 98 ms by bot id=8657485502
+2026-03-23 20:14:21,789 - INFO - aiogram.event - Update id=902943273 is handled. Duration 95 ms by bot id=8657485502
+2026-03-23 20:14:23,036 - INFO - aiogram.event - Update id=902943274 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 20:14:23,036 - ERROR - aiogram.event - Cause exception while process update id=902943274 by bot id=8657485502
+InterfaceError: Error binding parameter 0 - probably unsupported type.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/buy.py", line 43, in show_plans_list
+    plans = await get_visible_plans(user_id, for_admin=False, db=db)
+  File "/root/kakoi/utils/helpers.py", line 166, in get_visible_plans
+    user = await db.get_user(user_id)
+  File "/root/kakoi/db/database.py", line 129, in get_user
+    async with self.conn.execute(
+  File "/usr/local/lib/python3.8/dist-packages/aiosqlite/context.py", line 39, in __aenter__
+    self._obj = await self._coro
+  File "/usr/local/lib/python3.8/dist-packages/aiosqlite/core.py", line 193, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+  File "/usr/local/lib/python3.8/dist-packages/aiosqlite/core.py", line 132, in _execute
+    return await future
+  File "/usr/local/lib/python3.8/dist-packages/aiosqlite/core.py", line 115, in run
+    result = function()
+sqlite3.InterfaceError: Error binding parameter 0 - probably unsupported type.
+2026-03-23 20:14:33,006 - INFO - aiohttp.access - 204.76.203.30 [23/Mar/2026:20:14:33 +0400] "GET /json/ HTTP/1.1" 404 174 "-" "Go-http-client/1.1"
+2026-03-23 20:14:45,673 - INFO - aiogram.event - Update id=902943275 is handled. Duration 216 ms by bot id=8657485502
+2026-03-23 20:14:46,757 - INFO - aiogram.event - Update id=902943276 is handled. Duration 142 ms by bot id=8657485502
+2026-03-23 20:14:49,885 - INFO - aiogram.middlewares - Answer to callback query id=3412005761797962250
+2026-03-23 20:14:49,972 - INFO - aiogram.event - Update id=902943277 is not handled. Duration 178 ms by bot id=8657485502
+2026-03-23 20:14:49,972 - ERROR - aiogram.event - Cause exception while process update id=902943277 by bot id=8657485502
+NameError: name 'show_available_tariffs' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 184, in trial_decline
+    await show_available_tariffs(user_id, False)
+NameError: name 'show_available_tariffs' is not defined
+2026-03-23 20:14:56,734 - INFO - aiogram.event - Update id=902943278 is handled. Duration 157 ms by bot id=8657485502
+2026-03-23 20:14:58,329 - INFO - aiogram.event - Update id=902943279 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 20:14:58,329 - ERROR - aiogram.event - Cause exception while process update id=902943279 by bot id=8657485502
+NameError: name 'show_available_tariffs' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 186, in subscriptions_menu
+    await show_available_tariffs(user_id, active, user_msg=message)
+NameError: name 'show_available_tariffs' is not defined
+2026-03-23 20:15:17,265 - INFO - aiohttp.access - 204.76.203.212 [23/Mar/2026:20:15:17 +0400] "GET / HTTP/1.1" 404 174 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+2026-03-23 20:15:21,054 - INFO - aiogram.event - Update id=902943280 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 20:15:21,054 - ERROR - aiogram.event - Cause exception while process update id=902943280 by bot id=8657485502
+NameError: name 'show_available_tariffs' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/start.py", line 186, in subscriptions_menu
+    await show_available_tariffs(user_id, active, user_msg=message)
+NameError: name 'show_available_tariffs' is not defined
+2026-03-23 20:16:34,942 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:16:34,942 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:16:34,942 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:21:21,762 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:21:21,846 - INFO - __main__ - Бот запущен
+2026-03-23 20:21:21,847 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:21:21,885 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:21:28,947 - INFO - aiogram.event - Update id=902943281 is handled. Duration 145 ms by bot id=8657485502
+2026-03-23 20:21:31,430 - INFO - aiogram.event - Update id=902943282 is handled. Duration 89 ms by bot id=8657485502
+2026-03-23 20:21:32,503 - INFO - aiogram.event - Update id=902943283 is handled. Duration 239 ms by bot id=8657485502
+2026-03-23 20:21:37,519 - INFO - aiogram.event - Update id=902943284 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 20:21:37,520 - ERROR - aiogram.event - Cause exception while process update id=902943284 by bot id=8657485502
+InterfaceError: Error binding parameter 0 - probably unsupported type.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/buy.py", line 43, in show_plans_list
+    plans = await get_visible_plans(user_id, for_admin=False, db=db)
+  File "/root/kakoi/utils/helpers.py", line 166, in get_visible_plans
+    user = await db.get_user(user_id)
+  File "/root/kakoi/db/database.py", line 129, in get_user
+    async with self.conn.execute(
+  File "/usr/local/lib/python3.8/dist-packages/aiosqlite/context.py", line 39, in __aenter__
+    self._obj = await self._coro
+  File "/usr/local/lib/python3.8/dist-packages/aiosqlite/core.py", line 193, in execute
+    cursor = await self._execute(self._conn.execute, sql, parameters)
+  File "/usr/local/lib/python3.8/dist-packages/aiosqlite/core.py", line 132, in _execute
+    return await future
+  File "/usr/local/lib/python3.8/dist-packages/aiosqlite/core.py", line 115, in run
+    result = function()
+sqlite3.InterfaceError: Error binding parameter 0 - probably unsupported type.
+2026-03-23 20:22:08,665 - INFO - aiogram.event - Update id=902943285 is handled. Duration 112 ms by bot id=8657485502
+2026-03-23 20:22:11,802 - INFO - aiogram.event - Update id=902943286 is handled. Duration 84 ms by bot id=8657485502
+2026-03-23 20:22:16,438 - INFO - aiogram.event - Update id=902943287 is handled. Duration 95 ms by bot id=8657485502
+2026-03-23 20:22:20,083 - INFO - aiogram.event - Update id=902943288 is handled. Duration 80 ms by bot id=8657485502
+2026-03-23 20:22:21,247 - INFO - aiogram.event - Update id=902943289 is handled. Duration 79 ms by bot id=8657485502
+2026-03-23 20:22:22,746 - INFO - aiogram.event - Update id=902943290 is handled. Duration 81 ms by bot id=8657485502
+2026-03-23 20:22:24,164 - INFO - aiogram.event - Update id=902943291 is handled. Duration 120 ms by bot id=8657485502
+2026-03-23 20:22:25,592 - INFO - aiogram.middlewares - Answer to callback query id=3412005760100046344
+2026-03-23 20:22:25,616 - INFO - aiogram.event - Update id=902943292 is handled. Duration 124 ms by bot id=8657485502
+2026-03-23 20:22:29,345 - INFO - aiogram.event - Update id=902943293 is handled. Duration 388 ms by bot id=8657485502
+2026-03-23 20:22:30,502 - INFO - aiogram.middlewares - Answer to callback query id=3412005761187679720
+2026-03-23 20:22:30,523 - INFO - aiogram.event - Update id=902943294 is handled. Duration 134 ms by bot id=8657485502
+2026-03-23 20:22:35,418 - INFO - aiogram.event - Update id=902943295 is handled. Duration 84 ms by bot id=8657485502
+2026-03-23 20:23:58,887 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:23:58,888 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:23:58,888 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:24:03,392 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:24:03,454 - INFO - __main__ - Бот запущен
+2026-03-23 20:24:03,455 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:24:03,467 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:24:13,809 - INFO - aiogram.event - Update id=902943296 is handled. Duration 109 ms by bot id=8657485502
+2026-03-23 20:24:15,427 - INFO - aiogram.event - Update id=902943297 is handled. Duration 82 ms by bot id=8657485502
+2026-03-23 20:24:17,846 - INFO - aiogram.middlewares - Answer to callback query id=3412005762235373045
+2026-03-23 20:24:17,867 - INFO - aiogram.event - Update id=902943298 is handled. Duration 109 ms by bot id=8657485502
+2026-03-23 20:24:21,908 - WARNING - utils.helpers - HTML parse error for 987654321: Telegram server says - Bad Request: chat not found
+2026-03-23 20:24:22,006 - ERROR - utils.helpers - Ошибка отправки 987654321: Telegram server says - Bad Request: chat not found
+2026-03-23 20:24:22,192 - WARNING - utils.helpers - HTML parse error for 987654321: Telegram server says - Bad Request: chat not found
+2026-03-23 20:24:22,343 - ERROR - utils.helpers - Ошибка отправки 987654321: Telegram server says - Bad Request: chat not found
+2026-03-23 20:24:22,407 - INFO - aiogram.middlewares - Answer to callback query id=3412005761487254396
+2026-03-23 20:24:22,430 - INFO - aiogram.event - Update id=902943299 is handled. Duration 1113 ms by bot id=8657485502
+2026-03-23 20:24:39,711 - INFO - aiogram.middlewares - Answer to callback query id=3412005760049085649
+2026-03-23 20:24:39,751 - INFO - aiogram.event - Update id=902943300 is handled. Duration 177 ms by bot id=8657485502
+2026-03-23 20:24:42,521 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:24:42,522 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:24:42,522 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:29:24,443 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:29:24,503 - INFO - __main__ - Бот запущен
+2026-03-23 20:29:24,504 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:29:24,515 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:29:40,975 - INFO - aiogram.event - Update id=902943302 is handled. Duration 116 ms by bot id=8657485502
+2026-03-23 20:29:43,022 - INFO - aiogram.event - Update id=902943303 is handled. Duration 100 ms by bot id=8657485502
+2026-03-23 20:29:44,987 - INFO - aiogram.middlewares - Answer to callback query id=3412005760048768750
+2026-03-23 20:29:45,011 - INFO - aiogram.event - Update id=902943304 is handled. Duration 630 ms by bot id=8657485502
+2026-03-23 20:31:28,145 - INFO - aiogram.event - Update id=902943305 is handled. Duration 144 ms by bot id=8657485502
+2026-03-23 20:31:32,869 - INFO - aiogram.event - Update id=902943306 is handled. Duration 109 ms by bot id=8657485502
+2026-03-23 20:31:33,761 - INFO - aiogram.event - Update id=902943307 is handled. Duration 91 ms by bot id=8657485502
+2026-03-23 20:31:35,685 - INFO - aiogram.middlewares - Answer to callback query id=3412005762510534143
+2026-03-23 20:31:35,708 - INFO - aiogram.event - Update id=902943308 is handled. Duration 656 ms by bot id=8657485502
+2026-03-23 20:31:58,977 - INFO - aiogram.middlewares - Answer to callback query id=3412005759531426657
+2026-03-23 20:31:59,055 - INFO - aiogram.event - Update id=902943309 is handled. Duration 310 ms by bot id=8657485502
+2026-03-23 20:32:01,135 - INFO - aiogram.middlewares - Answer to callback query id=3412005762144726723
+2026-03-23 20:32:01,165 - INFO - aiogram.event - Update id=902943310 is handled. Duration 606 ms by bot id=8657485502
+2026-03-23 20:32:38,408 - INFO - aiogram.middlewares - Answer to callback query id=3412005762476604177
+2026-03-23 20:32:38,429 - INFO - aiogram.event - Update id=902943311 is handled. Duration 103 ms by bot id=8657485502
+2026-03-23 20:32:39,274 - INFO - aiogram.middlewares - Answer to callback query id=3412005761888441663
+2026-03-23 20:32:39,293 - INFO - aiogram.event - Update id=902943312 is not handled. Duration 20 ms by bot id=8657485502
+2026-03-23 20:32:39,293 - ERROR - aiogram.event - Cause exception while process update id=902943312 by bot id=8657485502
+NameError: name 'db' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/profile.py", line 131, in back_to_subscriptions
+    active = await is_active_subscription(user_id, db=db, panel=panel)
+NameError: name 'db' is not defined
+2026-03-23 20:33:23,074 - INFO - aiogram.middlewares - Answer to callback query id=3412005760291233129
+2026-03-23 20:33:23,211 - INFO - aiogram.event - Update id=902943313 is not handled. Duration 138 ms by bot id=8657485502
+2026-03-23 20:33:23,211 - ERROR - aiogram.event - Cause exception while process update id=902943313 by bot id=8657485502
+NameError: name 'db' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/profile.py", line 131, in back_to_subscriptions
+    active = await is_active_subscription(user_id, db=db, panel=panel)
+NameError: name 'db' is not defined
+2026-03-23 20:33:37,103 - INFO - aiogram.middlewares - Answer to callback query id=3412005762179847168
+2026-03-23 20:33:37,142 - INFO - aiogram.event - Update id=902943314 is handled. Duration 675 ms by bot id=8657485502
+2026-03-23 20:33:38,356 - INFO - aiogram.middlewares - Answer to callback query id=3412005763140762615
+2026-03-23 20:33:38,377 - INFO - aiogram.event - Update id=902943315 is handled. Duration 86 ms by bot id=8657485502
+2026-03-23 20:33:39,017 - INFO - aiogram.middlewares - Answer to callback query id=3412005760549812899
+2026-03-23 20:33:39,042 - INFO - aiogram.event - Update id=902943316 is not handled. Duration 25 ms by bot id=8657485502
+2026-03-23 20:33:39,042 - ERROR - aiogram.event - Cause exception while process update id=902943316 by bot id=8657485502
+NameError: name 'db' is not defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/profile.py", line 131, in back_to_subscriptions
+    active = await is_active_subscription(user_id, db=db, panel=panel)
+NameError: name 'db' is not defined
+2026-03-23 20:35:37,287 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:35:37,287 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:35:37,287 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:36:35,716 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:36:35,780 - INFO - __main__ - Бот запущен
+2026-03-23 20:36:35,780 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:36:35,794 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:36:42,735 - INFO - aiogram.middlewares - Answer to callback query id=3412005760302593050
+2026-03-23 20:36:42,753 - INFO - aiogram.event - Update id=902943318 is handled. Duration 143 ms by bot id=8657485502
+2026-03-23 20:36:42,954 - INFO - aiogram.event - Update id=902943319 is handled. Duration 98 ms by bot id=8657485502
+2026-03-23 20:36:45,072 - INFO - aiogram.event - Update id=902943320 is handled. Duration 130 ms by bot id=8657485502
+2026-03-23 20:36:46,167 - INFO - aiogram.event - Update id=902943321 is handled. Duration 275 ms by bot id=8657485502
+2026-03-23 20:36:47,635 - INFO - aiogram.middlewares - Answer to callback query id=3412005762489213015
+2026-03-23 20:36:47,661 - INFO - aiogram.event - Update id=902943322 is handled. Duration 611 ms by bot id=8657485502
+2026-03-23 20:36:48,750 - INFO - aiogram.middlewares - Answer to callback query id=3412005760677612382
+2026-03-23 20:36:48,771 - INFO - aiogram.event - Update id=902943323 is handled. Duration 94 ms by bot id=8657485502
+2026-03-23 20:36:50,246 - INFO - aiogram.middlewares - Answer to callback query id=3412005760229359084
+2026-03-23 20:36:50,266 - INFO - aiogram.event - Update id=902943324 is handled. Duration 152 ms by bot id=8657485502
+2026-03-23 20:36:50,512 - INFO - aiogram.event - Update id=902943325 is handled. Duration 157 ms by bot id=8657485502
+2026-03-23 20:36:52,421 - INFO - aiogram.event - Update id=902943326 is handled. Duration 257 ms by bot id=8657485502
+2026-03-23 20:36:53,811 - INFO - aiogram.event - Update id=902943327 is handled. Duration 140 ms by bot id=8657485502
+2026-03-23 20:36:54,750 - INFO - aiogram.event - Update id=902943328 is handled. Duration 90 ms by bot id=8657485502
+2026-03-23 20:36:56,079 - INFO - aiogram.event - Update id=902943329 is handled. Duration 84 ms by bot id=8657485502
+2026-03-23 20:36:57,087 - INFO - aiogram.middlewares - Answer to callback query id=3412005760783305289
+2026-03-23 20:36:57,109 - INFO - aiogram.event - Update id=902943330 is handled. Duration 135 ms by bot id=8657485502
+2026-03-23 20:36:57,338 - INFO - aiogram.event - Update id=902943331 is handled. Duration 136 ms by bot id=8657485502
+2026-03-23 20:37:17,780 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:37:17,781 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:37:17,781 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:41:02,309 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:41:02,372 - INFO - __main__ - Бот запущен
+2026-03-23 20:41:02,373 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:41:02,384 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:41:12,422 - INFO - aiohttp.access - 204.76.203.212 [23/Mar/2026:20:41:12 +0400] "GET / HTTP/1.1" 404 174 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+2026-03-23 20:41:17,371 - INFO - aiogram.event - Update id=902943332 is handled. Duration 130 ms by bot id=8657485502
+2026-03-23 20:41:18,896 - INFO - aiogram.event - Update id=902943333 is handled. Duration 100 ms by bot id=8657485502
+2026-03-23 20:41:21,791 - INFO - aiogram.event - Update id=902943334 is handled. Duration 99 ms by bot id=8657485502
+2026-03-23 20:41:23,462 - INFO - aiogram.event - Update id=902943335 is handled. Duration 121 ms by bot id=8657485502
+2026-03-23 20:41:36,264 - INFO - aiogram.middlewares - Answer to callback query id=3412005762371239777
+2026-03-23 20:41:36,291 - INFO - aiogram.event - Update id=902943336 is handled. Duration 116 ms by bot id=8657485502
+2026-03-23 20:41:37,927 - INFO - aiogram.middlewares - Answer to callback query id=3412005760902344338
+2026-03-23 20:41:37,950 - INFO - aiogram.event - Update id=902943337 is handled. Duration 92 ms by bot id=8657485502
+2026-03-23 20:41:38,818 - INFO - aiogram.middlewares - Answer to callback query id=3412005761471365685
+2026-03-23 20:41:38,851 - INFO - aiogram.event - Update id=902943338 is handled. Duration 108 ms by bot id=8657485502
+2026-03-23 20:41:40,694 - INFO - aiogram.middlewares - Answer to callback query id=3412005762160092777
+2026-03-23 20:41:40,717 - INFO - aiogram.event - Update id=902943339 is handled. Duration 91 ms by bot id=8657485502
+2026-03-23 20:41:44,600 - INFO - aiogram.event - Update id=902943340 is handled. Duration 93 ms by bot id=8657485502
+2026-03-23 20:41:47,367 - INFO - aiogram.middlewares - Answer to callback query id=3412005760455624084
+2026-03-23 20:41:47,402 - INFO - aiogram.event - Update id=902943341 is handled. Duration 107 ms by bot id=8657485502
+2026-03-23 20:41:50,685 - INFO - aiogram.middlewares - Answer to callback query id=3412005762872806971
+2026-03-23 20:41:50,792 - INFO - aiogram.event - Update id=902943342 is handled. Duration 550 ms by bot id=8657485502
+2026-03-23 20:41:57,118 - INFO - aiogram.event - Update id=902943343 is handled. Duration 112 ms by bot id=8657485502
+2026-03-23 20:41:59,869 - INFO - aiogram.event - Update id=902943344 is handled. Duration 92 ms by bot id=8657485502
+2026-03-23 20:42:01,433 - INFO - aiogram.event - Update id=902943345 is handled. Duration 159 ms by bot id=8657485502
+2026-03-23 20:42:08,091 - INFO - aiogram.event - Update id=902943346 is handled. Duration 123 ms by bot id=8657485502
+2026-03-23 20:42:12,952 - INFO - aiogram.middlewares - Answer to callback query id=3412005762336374892
+2026-03-23 20:42:12,994 - INFO - aiogram.event - Update id=902943347 is handled. Duration 619 ms by bot id=8657485502
+2026-03-23 20:43:17,232 - INFO - aiogram.middlewares - Answer to callback query id=3412005762452415191
+2026-03-23 20:43:17,263 - INFO - aiogram.event - Update id=902943348 is handled. Duration 138 ms by bot id=8657485502
+2026-03-23 20:43:18,762 - INFO - aiogram.middlewares - Answer to callback query id=3412005758930259604
+2026-03-23 20:43:18,800 - INFO - aiogram.event - Update id=902943349 is handled. Duration 167 ms by bot id=8657485502
+2026-03-23 20:43:22,363 - INFO - aiogram.event - Update id=902943350 is handled. Duration 89 ms by bot id=8657485502
+2026-03-23 20:43:23,517 - INFO - aiogram.event - Update id=902943351 is handled. Duration 112 ms by bot id=8657485502
+2026-03-23 20:43:26,878 - INFO - aiogram.event - Update id=902943352 is handled. Duration 93 ms by bot id=8657485502
+2026-03-23 20:43:38,895 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:43:38,896 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:43:38,896 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:44:36,452 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:44:36,549 - INFO - __main__ - Бот запущен
+2026-03-23 20:44:36,550 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:44:36,567 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:44:41,828 - INFO - aiogram.event - Update id=902943353 is handled. Duration 95 ms by bot id=8657485502
+2026-03-23 20:44:45,390 - INFO - aiogram.event - Update id=902943354 is handled. Duration 90 ms by bot id=8657485502
+2026-03-23 20:44:47,512 - INFO - aiogram.middlewares - Answer to callback query id=3412005761388030834
+2026-03-23 20:44:47,533 - INFO - aiogram.event - Update id=902943355 is handled. Duration 556 ms by bot id=8657485502
+2026-03-23 20:46:05,963 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:46:05,964 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:46:05,964 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:49:22,406 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:49:22,486 - INFO - __main__ - Бот запущен
+2026-03-23 20:49:22,487 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:49:22,506 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:49:46,578 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:49:46,579 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:49:46,579 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:51:37,863 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:51:37,942 - INFO - __main__ - Бот запущен
+2026-03-23 20:51:37,943 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:51:37,959 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:51:50,077 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:51:50,082 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:51:50,085 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:52:56,159 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:52:56,236 - INFO - __main__ - Бот запущен
+2026-03-23 20:52:56,236 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:52:56,249 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:52:56,305 - INFO - services.webhook - ITPAY webhook: test, id=
+2026-03-23 20:52:56,306 - INFO - aiohttp.access - 127.0.0.1 [23/Mar/2026:20:52:56 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "curl/7.68.0"
+2026-03-23 20:53:50,505 - INFO - aiohttp.access - 168.222.253.22 [23/Mar/2026:20:53:50 +0400] "GET /itpay/webhook HTTP/1.1" 405 205 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0"
+2026-03-23 20:53:50,707 - INFO - aiohttp.access - 168.222.253.22 [23/Mar/2026:20:53:50 +0400] "GET /favicon.ico HTTP/1.1" 404 174 "http://77.239.115.146:8080/itpay/webhook" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:148.0) Gecko/20100101 Firefox/148.0"
+2026-03-23 20:53:59,567 - ERROR - aiohttp.server - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_protocol.py", line 377, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 563, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message:
+  Invalid method encountered:
+
+    b'\x16\x03\x01\x07O\x01'
+      ^
+2026-03-23 20:53:59,569 - INFO - aiohttp.access - 168.222.253.22 [23/Mar/2026:20:53:59 +0400] "UNKNOWN / HTTP/1.0" 400 223 "-" "-"
+2026-03-23 20:53:59,586 - ERROR - aiohttp.server - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_protocol.py", line 377, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 563, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message:
+  Invalid method encountered:
+
+    b'\x16\x03\x01\x07O\x01'
+      ^
+2026-03-23 20:53:59,587 - INFO - aiohttp.access - 168.222.253.22 [23/Mar/2026:20:53:59 +0400] "UNKNOWN / HTTP/1.0" 400 223 "-" "-"
+2026-03-23 20:53:59,942 - ERROR - aiohttp.server - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_protocol.py", line 377, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 563, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message:
+  Invalid method encountered:
+
+    b'\x16\x03\x01\x02~\x01'
+      ^
+2026-03-23 20:53:59,943 - INFO - aiohttp.access - 168.222.253.22 [23/Mar/2026:20:53:59 +0400] "UNKNOWN / HTTP/1.0" 400 223 "-" "-"
+2026-03-23 20:55:57,015 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 20:55:57,016 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:55:57,016 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:56:00,351 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:56:00,438 - INFO - __main__ - Бот запущен
+2026-03-23 20:56:00,439 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:56:00,455 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:56:16,292 - INFO - aiogram.middlewares - Answer to callback query id=3412005760498388580
+2026-03-23 20:56:16,309 - INFO - aiogram.event - Update id=902943357 is handled. Duration 103 ms by bot id=8657485502
+2026-03-23 20:56:17,890 - INFO - aiogram.middlewares - Answer to callback query id=3412005761102360507
+2026-03-23 20:56:17,912 - INFO - aiogram.event - Update id=902943358 is handled. Duration 537 ms by bot id=8657485502
+2026-03-23 20:57:05,125 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 20:57:05,126 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:57:05,126 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 20:57:10,839 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 20:57:10,928 - INFO - __main__ - Бот запущен
+2026-03-23 20:57:10,928 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 20:57:10,950 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 20:57:32,911 - INFO - aiogram.middlewares - Answer to callback query id=3412005762066186674
+2026-03-23 20:57:32,930 - INFO - aiogram.event - Update id=902943359 is handled. Duration 111 ms by bot id=8657485502
+2026-03-23 20:57:34,580 - INFO - aiogram.middlewares - Answer to callback query id=3412005760043661564
+2026-03-23 20:57:34,601 - INFO - aiogram.event - Update id=902943360 is handled. Duration 554 ms by bot id=8657485502
+2026-03-23 20:59:01,937 - INFO - aiogram.event - Update id=902943361 is handled. Duration 118 ms by bot id=8657485502
+2026-03-23 20:59:08,146 - INFO - aiogram.event - Update id=902943362 is handled. Duration 135 ms by bot id=8657485502
+2026-03-23 20:59:11,138 - INFO - aiogram.event - Update id=902943363 is handled. Duration 97 ms by bot id=8657485502
+2026-03-23 20:59:28,902 - INFO - aiogram.middlewares - Answer to callback query id=3176763143439507287
+2026-03-23 20:59:28,927 - INFO - aiogram.event - Update id=902943364 is handled. Duration 653 ms by bot id=8657485502
+2026-03-23 21:03:38,245 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 21:03:38,247 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:03:38,248 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:14:01,514 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:14:01,591 - INFO - __main__ - Бот запущен
+2026-03-23 21:14:01,592 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:14:01,603 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:14:20,288 - INFO - aiogram.middlewares - Answer to callback query id=3412005761159378565
+2026-03-23 21:14:20,307 - INFO - aiogram.event - Update id=902943365 is handled. Duration 120 ms by bot id=8657485502
+2026-03-23 21:14:21,713 - INFO - aiogram.middlewares - Answer to callback query id=3412005760529473579
+2026-03-23 21:14:21,734 - INFO - aiogram.event - Update id=902943366 is handled. Duration 568 ms by bot id=8657485502
+2026-03-23 21:15:38,345 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 21:15:38,345 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:15:38,345 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:16:33,723 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:16:33,787 - INFO - __main__ - Бот запущен
+2026-03-23 21:16:33,787 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:16:33,799 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:17:25,894 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 21:17:25,895 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:17:25,895 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:20:22,939 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:20:23,030 - INFO - __main__ - Бот запущен
+2026-03-23 21:20:23,031 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:20:23,050 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:20:32,724 - INFO - aiogram.middlewares - Answer to callback query id=3412005759608844782
+2026-03-23 21:20:32,778 - INFO - aiogram.event - Update id=902943367 is handled. Duration 180 ms by bot id=8657485502
+2026-03-23 21:20:34,311 - INFO - aiogram.middlewares - Answer to callback query id=3412005761043942058
+2026-03-23 21:20:34,336 - INFO - aiogram.event - Update id=902943368 is handled. Duration 616 ms by bot id=8657485502
+2026-03-23 21:21:18,610 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 21:21:18,610 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:21:18,611 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:21:22,563 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:21:22,648 - INFO - __main__ - Бот запущен
+2026-03-23 21:21:22,649 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:21:22,665 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:22:16,582 - INFO - aiogram.middlewares - Answer to callback query id=3412005761836918493
+2026-03-23 21:22:16,675 - INFO - aiogram.event - Update id=902943369 is handled. Duration 319 ms by bot id=8657485502
+2026-03-23 21:22:18,210 - INFO - aiogram.middlewares - Answer to callback query id=3412005760831818956
+2026-03-23 21:22:18,254 - INFO - aiogram.event - Update id=902943370 is handled. Duration 717 ms by bot id=8657485502
+2026-03-23 21:24:52,892 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 21:24:52,893 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:24:52,893 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:24:56,703 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:24:56,767 - INFO - __main__ - Бот запущен
+2026-03-23 21:24:56,768 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:24:56,780 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:24:59,899 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 21:24:59,900 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:24:59,900 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:25:14,010 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:25:14,082 - INFO - __main__ - Бот запущен
+2026-03-23 21:25:14,083 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:25:14,095 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:28:15,627 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 21:28:15,628 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:28:15,628 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:28:19,650 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:28:19,727 - INFO - __main__ - Бот запущен
+2026-03-23 21:28:19,727 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:28:19,741 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:28:22,297 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 21:28:22,298 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:28:22,298 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:34:15,633 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:34:15,710 - INFO - __main__ - Бот запущен
+2026-03-23 21:34:15,711 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:34:15,727 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:34:23,804 - INFO - aiogram.middlewares - Answer to callback query id=3412005761798614853
+2026-03-23 21:34:23,878 - INFO - aiogram.event - Update id=902943371 is handled. Duration 511 ms by bot id=8657485502
+2026-03-23 21:34:25,128 - INFO - aiogram.middlewares - Answer to callback query id=3412005759895343769
+2026-03-23 21:34:25,153 - INFO - aiogram.event - Update id=902943372 is handled. Duration 582 ms by bot id=8657485502
+2026-03-23 21:35:50,425 - WARNING - services.webhook - ITPAY webhook: неверная подпись
+2026-03-23 21:35:50,425 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:35:50 +0400] "POST /itpay/webhook HTTP/1.1" 403 177 "-" "python-requests/2.32.4"
+2026-03-23 21:35:50,553 - WARNING - services.webhook - ITPAY webhook: неверная подпись
+2026-03-23 21:35:50,553 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:35:50 +0400] "POST /itpay/webhook HTTP/1.1" 403 177 "-" "python-requests/2.32.4"
+2026-03-23 21:37:52,384 - WARNING - services.webhook - ITPAY webhook: неверная подпись
+2026-03-23 21:37:52,385 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:37:52 +0400] "POST /itpay/webhook HTTP/1.1" 403 177 "-" "python-requests/2.32.4"
+2026-03-23 21:37:52,520 - WARNING - services.webhook - ITPAY webhook: неверная подпись
+2026-03-23 21:37:52,521 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:37:52 +0400] "POST /itpay/webhook HTTP/1.1" 403 177 "-" "python-requests/2.32.4"
+2026-03-23 21:38:23,844 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 21:38:23,845 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:38:23,845 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:38:27,378 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:38:27,445 - INFO - __main__ - Бот запущен
+2026-03-23 21:38:27,446 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:38:27,458 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:39:03,150 - WARNING - services.webhook - ITPAY webhook: неверная подпись
+2026-03-23 21:39:03,150 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:39:03 +0400] "POST /itpay/webhook HTTP/1.1" 403 177 "-" "python-requests/2.32.4"
+2026-03-23 21:39:08,831 - WARNING - services.webhook - ITPAY webhook: неверная подпись
+2026-03-23 21:39:08,831 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:39:08 +0400] "POST /itpay/webhook HTTP/1.1" 403 177 "-" "python-requests/2.32.4"
+2026-03-23 21:39:17,210 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 21:39:17,211 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:39:17,211 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:39:47,066 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:39:47,146 - INFO - __main__ - Бот запущен
+2026-03-23 21:39:47,147 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:39:47,162 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:40:45,375 - WARNING - services.webhook - ITPAY webhook: неверная подпись
+2026-03-23 21:40:45,376 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:40:45 +0400] "POST /itpay/webhook HTTP/1.1" 403 177 "-" "python-requests/2.32.4"
+2026-03-23 21:40:50,599 - WARNING - services.webhook - ITPAY webhook: неверная подпись
+2026-03-23 21:40:50,600 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:40:50 +0400] "POST /itpay/webhook HTTP/1.1" 403 177 "-" "python-requests/2.32.4"
+2026-03-23 21:42:55,773 - WARNING - services.webhook - ITPAY webhook: неверная подпись
+2026-03-23 21:42:55,773 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:42:55 +0400] "POST /itpay/webhook HTTP/1.1" 403 177 "-" "python-requests/2.32.4"
+2026-03-23 21:42:55,902 - WARNING - services.webhook - ITPAY webhook: неверная подпись
+2026-03-23 21:42:55,903 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:42:55 +0400] "POST /itpay/webhook HTTP/1.1" 403 177 "-" "python-requests/2.32.4"
+2026-03-23 21:43:12,272 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 21:43:12,273 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:43:12,273 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:43:15,658 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:43:15,719 - INFO - __main__ - Бот запущен
+2026-03-23 21:43:15,719 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:43:15,731 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:44:07,268 - INFO - aiohttp.access - 2.57.122.103 [23/Mar/2026:21:44:07 +0400] "CONNECT  HTTP/1.1" 404 174 "-" "Go-http-client/1.1"
+2026-03-23 21:44:07,341 - ERROR - aiohttp.server - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_protocol.py", line 377, in data_received
+    messages, upgraded, tail = self._request_parser.feed_data(data)
+  File "aiohttp/_http_parser.pyx", line 563, in aiohttp._http_parser.HttpParser.feed_data
+aiohttp.http_exceptions.BadStatusLine: 400, message:
+  Invalid method encountered:
+
+    b'\x16\x03\x01'
+      ^
+2026-03-23 21:44:07,343 - INFO - aiohttp.access - 2.57.122.103 [23/Mar/2026:21:44:07 +0400] "UNKNOWN / HTTP/1.0" 400 214 "-" "-"
+2026-03-23 21:44:45,934 - WARNING - services.webhook - ITPAY webhook: неверная подпись
+2026-03-23 21:44:45,935 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:44:45 +0400] "POST /itpay/webhook HTTP/1.1" 403 177 "-" "python-requests/2.32.4"
+2026-03-23 21:44:46,062 - WARNING - services.webhook - ITPAY webhook: неверная подпись
+2026-03-23 21:44:46,063 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:44:46 +0400] "POST /itpay/webhook HTTP/1.1" 403 177 "-" "python-requests/2.32.4"
+2026-03-23 21:45:09,499 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 21:45:09,499 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:45:09,500 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:45:44,086 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:45:44,153 - INFO - __main__ - Бот запущен
+2026-03-23 21:45:44,154 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:45:44,166 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:45:51,031 - INFO - services.webhook - ITPAY webhook: payment.completed, id=cefa83dc-7ed3-4a0e-a059-1a90fd7f57b9
+2026-03-23 21:45:51,032 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 21:45:51,032 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 21:45:51,032 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 21:45:51,033 - ERROR - services.panel - Не удалось получить inbounds для создания клиента
+2026-03-23 21:45:51,130 - ERROR - services.webhook - ITPAY webhook: не удалось создать VPN для 794419497, план basic
+2026-03-23 21:45:51,130 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:45:51 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 21:45:56,043 - INFO - services.webhook - ITPAY webhook: payment.pay, id=cefa83dc-7ed3-4a0e-a059-1a90fd7f57b9
+2026-03-23 21:45:56,044 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:45:56 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 21:46:17,776 - INFO - aiogram.middlewares - Answer to callback query id=3412005759946167632
+2026-03-23 21:46:17,797 - INFO - aiogram.event - Update id=902943373 is handled. Duration 123 ms by bot id=8657485502
+2026-03-23 21:46:19,251 - INFO - aiogram.middlewares - Answer to callback query id=3412005760770820293
+2026-03-23 21:46:19,275 - INFO - aiogram.event - Update id=902943374 is handled. Duration 527 ms by bot id=8657485502
+2026-03-23 21:46:41,082 - INFO - services.webhook - ITPAY webhook: payment.completed, id=be764514-859d-4a44-8f56-ed632d974a68
+2026-03-23 21:46:41,083 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 21:46:41,084 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 21:46:41,084 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 21:46:41,084 - ERROR - services.panel - Не удалось получить inbounds для создания клиента
+2026-03-23 21:46:41,144 - ERROR - services.webhook - ITPAY webhook: не удалось создать VPN для 794419497, план basic
+2026-03-23 21:46:41,145 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:46:41 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 21:46:41,284 - INFO - services.webhook - ITPAY webhook: payment.pay, id=be764514-859d-4a44-8f56-ed632d974a68
+2026-03-23 21:46:41,285 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:46:41 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 21:48:51,874 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 21:48:51,875 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:48:51,875 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:48:55,874 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:48:55,961 - INFO - __main__ - Бот запущен
+2026-03-23 21:48:55,966 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:48:55,990 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:49:37,979 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 21:49:37,979 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:49:37,980 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:49:59,824 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:49:59,906 - INFO - __main__ - Бот запущен
+2026-03-23 21:49:59,906 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:49:59,924 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:50:28,834 - INFO - aiogram.middlewares - Answer to callback query id=3412005762943871376
+2026-03-23 21:50:28,861 - INFO - aiogram.event - Update id=902943375 is handled. Duration 139 ms by bot id=8657485502
+2026-03-23 21:50:30,359 - INFO - aiogram.middlewares - Answer to callback query id=3412005762811691976
+2026-03-23 21:50:30,399 - INFO - aiogram.event - Update id=902943376 is handled. Duration 572 ms by bot id=8657485502
+2026-03-23 21:50:41,429 - INFO - services.webhook - ITPAY webhook: payment.completed, id=b9612b4b-ae26-4bf0-8180-e2914bf51b36
+2026-03-23 21:50:41,430 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 21:50:41,430 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 21:50:41,430 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 21:50:41,430 - ERROR - services.panel - Не удалось получить inbounds для создания клиента
+2026-03-23 21:50:41,498 - ERROR - services.webhook - ITPAY webhook: не удалось создать VPN для 794419497, план basic
+2026-03-23 21:50:41,498 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:50:41 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 21:50:41,626 - INFO - services.webhook - ITPAY webhook: payment.pay, id=b9612b4b-ae26-4bf0-8180-e2914bf51b36
+2026-03-23 21:50:41,627 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:50:41 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 21:51:35,251 - INFO - aiohttp.access - 157.245.204.161 [23/Mar/2026:21:51:35 +0400] "GET / HTTP/1.1" 404 174 "-" "-"
+2026-03-23 21:52:01,790 - INFO - aiohttp.access - 89.42.231.241 [23/Mar/2026:21:52:01 +0400] "GET / HTTP/1.1" 404 174 "-" "-"
+2026-03-23 21:52:56,887 - INFO - services.webhook - ITPAY webhook: payment.completed, id=1d2c9f95-d7a1-49bd-a607-403ba469ab95
+2026-03-23 21:52:56,888 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 21:52:56,888 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 21:52:56,888 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 21:52:56,888 - ERROR - services.panel - Не удалось получить inbounds для создания клиента
+2026-03-23 21:52:56,981 - ERROR - services.webhook - ITPAY webhook: не удалось создать VPN для 794419497, план basic
+2026-03-23 21:52:56,981 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:52:56 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 21:52:57,111 - INFO - services.webhook - ITPAY webhook: payment.pay, id=1d2c9f95-d7a1-49bd-a607-403ba469ab95
+2026-03-23 21:52:57,112 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:52:57 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 21:53:43,502 - INFO - aiohttp.access - 18.206.228.253 [23/Mar/2026:21:53:43 +0400] "GET / HTTP/1.1" 404 174 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+2026-03-23 21:54:20,560 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 21:54:20,561 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:54:20,561 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:54:24,529 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:54:24,611 - INFO - __main__ - Бот запущен
+2026-03-23 21:54:24,612 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:54:24,629 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:55:00,320 - INFO - aiogram.middlewares - Answer to callback query id=3412005763099057523
+2026-03-23 21:55:00,353 - INFO - aiogram.event - Update id=902943377 is handled. Duration 147 ms by bot id=8657485502
+2026-03-23 21:55:03,528 - INFO - aiogram.middlewares - Answer to callback query id=3412005759514785301
+2026-03-23 21:55:03,552 - INFO - aiogram.event - Update id=902943378 is handled. Duration 646 ms by bot id=8657485502
+2026-03-23 21:56:21,255 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 21:56:21,255 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:56:21,256 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 21:56:25,119 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 21:56:25,194 - INFO - __main__ - Бот запущен
+2026-03-23 21:56:25,195 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 21:56:25,209 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 21:56:41,601 - INFO - aiogram.middlewares - Answer to callback query id=3412005762203775933
+2026-03-23 21:56:41,648 - INFO - aiogram.event - Update id=902943379 is handled. Duration 359 ms by bot id=8657485502
+2026-03-23 21:56:43,073 - INFO - aiogram.middlewares - Answer to callback query id=3412005762930925190
+2026-03-23 21:56:43,094 - INFO - aiogram.event - Update id=902943380 is handled. Duration 567 ms by bot id=8657485502
+2026-03-23 21:57:57,306 - INFO - services.webhook - ITPAY webhook: payment.completed, id=4a1b9cc7-e5a6-4380-b2b8-100ce4623969
+2026-03-23 21:57:57,306 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 21:57:57,307 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 21:57:57,307 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 21:57:57,307 - ERROR - services.panel - Не удалось получить inbounds для создания клиента
+2026-03-23 21:57:57,415 - ERROR - services.webhook - ITPAY webhook: не удалось создать VPN для 794419497, план basic
+2026-03-23 21:57:57,416 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:57:57 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 21:57:57,549 - INFO - services.webhook - ITPAY webhook: payment.pay, id=4a1b9cc7-e5a6-4380-b2b8-100ce4623969
+2026-03-23 21:57:57,550 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:21:57:57 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:00:35,269 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:00:35,270 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:00:35,270 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:00:41,363 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:00:41,445 - INFO - __main__ - Бот запущен
+2026-03-23 22:00:41,446 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:00:41,461 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:00:48,775 - INFO - aiogram.middlewares - Answer to callback query id=3412005761083203057
+2026-03-23 22:00:48,804 - INFO - aiogram.event - Update id=902943381 is handled. Duration 152 ms by bot id=8657485502
+2026-03-23 22:00:53,248 - INFO - aiogram.middlewares - Answer to callback query id=3412005760521088795
+2026-03-23 22:00:53,269 - INFO - aiogram.event - Update id=902943382 is handled. Duration 734 ms by bot id=8657485502
+2026-03-23 22:01:07,636 - INFO - services.webhook - ITPAY webhook: payment.completed, id=e8837ab9-df5d-475b-9e0e-d3e43c451775
+2026-03-23 22:01:07,638 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 22:01:07,638 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 22:01:07,638 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 22:01:07,638 - ERROR - services.panel - Не удалось получить inbounds для создания клиента
+2026-03-23 22:01:07,879 - ERROR - services.webhook - ITPAY webhook: не удалось создать VPN для 794419497, план basic
+2026-03-23 22:01:07,880 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:01:07 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:01:12,646 - INFO - services.webhook - ITPAY webhook: payment.pay, id=e8837ab9-df5d-475b-9e0e-d3e43c451775
+2026-03-23 22:01:12,648 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:01:12 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:02:57,740 - INFO - services.webhook - ITPAY webhook: payment.completed, id=f7c574d4-94e2-4008-8d83-9ea7c857310b
+2026-03-23 22:02:57,741 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 22:02:57,741 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 22:02:57,741 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 22:02:57,741 - ERROR - services.panel - Не удалось получить inbounds для создания клиента
+2026-03-23 22:02:57,835 - ERROR - services.webhook - ITPAY webhook: не удалось создать VPN для 794419497, план basic
+2026-03-23 22:02:57,836 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:02:57 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:02:57,968 - INFO - services.webhook - ITPAY webhook: payment.pay, id=f7c574d4-94e2-4008-8d83-9ea7c857310b
+2026-03-23 22:02:57,969 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:02:57 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:03:17,789 - INFO - services.webhook - ITPAY webhook: payment.completed, id=ef55e94f-ade2-4675-8461-f830a5997d64
+2026-03-23 22:03:17,790 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 22:03:17,790 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 22:03:17,790 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 22:03:17,790 - ERROR - services.panel - Не удалось получить inbounds для создания клиента
+2026-03-23 22:03:17,874 - ERROR - services.webhook - ITPAY webhook: не удалось создать VPN для 794419497, план basic
+2026-03-23 22:03:17,874 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:03:17 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:03:22,804 - INFO - services.webhook - ITPAY webhook: payment.pay, id=ef55e94f-ade2-4675-8461-f830a5997d64
+2026-03-23 22:03:22,806 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:03:22 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:05:57,867 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:05:57,868 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:05:57,868 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:08:32,970 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:08:33,052 - INFO - __main__ - Бот запущен
+2026-03-23 22:08:33,053 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:08:33,069 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:09:08,301 - INFO - services.webhook - ITPAY webhook: payment.completed, id=ac2044a5-56a0-4e21-a8ca-e9304ba59c14
+2026-03-23 22:09:08,303 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 22:09:08,303 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 22:09:08,303 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 22:09:08,303 - ERROR - services.panel - Не удалось получить inbounds для создания клиента
+2026-03-23 22:09:08,510 - ERROR - services.webhook - ITPAY webhook: не удалось создать VPN для 794419497, план basic
+2026-03-23 22:09:08,510 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:09:08 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:09:15,770 - INFO - services.webhook - ITPAY webhook: payment.pay, id=ac2044a5-56a0-4e21-a8ca-e9304ba59c14
+2026-03-23 22:09:15,771 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:09:15 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:10:48,442 - INFO - services.webhook - ITPAY webhook: payment.completed, id=f348587d-8832-4b7a-b82b-ea297579c8d2
+2026-03-23 22:10:48,443 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 22:10:48,444 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 22:10:48,444 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=0 msg=None
+2026-03-23 22:10:48,444 - ERROR - services.panel - Не удалось получить inbounds для создания клиента
+2026-03-23 22:10:48,509 - ERROR - services.webhook - ITPAY webhook: не удалось создать VPN для 794419497, план basic
+2026-03-23 22:10:48,510 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:10:48 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:10:53,454 - INFO - services.webhook - ITPAY webhook: payment.pay, id=f348587d-8832-4b7a-b82b-ea297579c8d2
+2026-03-23 22:10:53,455 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:10:53 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:11:04,897 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:11:04,898 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:11:04,898 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:11:08,525 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:11:08,525 - ERROR - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fbbaef802e0>
+2026-03-23 22:11:08,525 - ERROR - asyncio - Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7fbbaef87220>, 109397.763873016)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7fbbaef6de20>
+2026-03-23 22:11:08,582 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:11:08,588 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:11:08,653 - INFO - __main__ - Бот запущен
+2026-03-23 22:11:08,654 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:11:08,668 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:11:36,434 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:11:36,434 - ERROR - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f4f3bb37280>
+2026-03-23 22:11:36,434 - ERROR - asyncio - Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f4f3bb3e220>, 109425.672439953)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f4f3bb24dc0>
+2026-03-23 22:11:36,487 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:11:59,682 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:11:59,683 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:11:59,683 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:12:29,466 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:12:29,467 - ERROR - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f6c47602340>
+2026-03-23 22:12:29,467 - ERROR - asyncio - Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f6c47607160>, 109478.705153054)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f6c475eee80>
+2026-03-23 22:12:29,525 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:12:29,525 - ERROR - asyncio - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7f6c47602370>
+2026-03-23 22:12:29,525 - ERROR - asyncio - Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x7f6c47607100>, 109478.763759238)]']
+connector: <aiohttp.connector.TCPConnector object at 0x7f6c47602730>
+2026-03-23 22:12:29,583 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:12:29,590 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:12:29,670 - INFO - __main__ - Бот запущен
+2026-03-23 22:12:29,671 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:12:29,686 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:14:48,758 - INFO - services.webhook - ITPAY webhook: payment.completed, id=f7d83b39-28de-4102-94a5-d425a0b19737
+2026-03-23 22:14:48,821 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:14:48,873 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:14:48,875 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=200 msg=None
+2026-03-23 22:14:48,875 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 22:14:48,928 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:14:48,981 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:14:48,983 - ERROR - services.panel - Ошибка API getInbounds: url=https://77.239.115.146:20749/YXSGwYdHjfZzApdHfm/panel/api/inbounds/list status=200 msg=None
+2026-03-23 22:14:48,983 - ERROR - services.panel - Не удалось получить inbounds для создания клиента
+2026-03-23 22:14:49,083 - ERROR - services.webhook - ITPAY webhook: не удалось создать VPN для 794419497, план basic
+2026-03-23 22:14:49,084 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:14:48 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:14:49,204 - INFO - services.webhook - ITPAY webhook: payment.pay, id=f7d83b39-28de-4102-94a5-d425a0b19737
+2026-03-23 22:14:49,205 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:14:49 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:16:13,626 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:16:13,627 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:16:13,627 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:16:17,091 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:16:17,097 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:16:17,183 - INFO - __main__ - Бот запущен
+2026-03-23 22:16:17,183 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:16:17,204 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:16:37,560 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:16:37,561 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:16:37,561 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:16:45,333 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:16:45,339 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:16:45,409 - INFO - __main__ - Бот запущен
+2026-03-23 22:16:45,410 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:16:45,425 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:16:49,478 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:16:49,479 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:16:49,479 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:16:53,504 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:16:53,512 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:16:53,588 - INFO - __main__ - Бот запущен
+2026-03-23 22:16:53,588 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:16:53,605 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:17:16,687 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:17:16,688 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:17:16,688 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:18:07,433 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:18:07,438 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:18:07,563 - INFO - __main__ - Бот запущен
+2026-03-23 22:18:07,564 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:18:07,578 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:18:45,630 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:18:45,630 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:18:45,630 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:18:49,331 - WARNING - services.panel - LOGIN DEBUG: status=200 data={}
+2026-03-23 22:18:49,331 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:18:49,339 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:18:49,416 - INFO - __main__ - Бот запущен
+2026-03-23 22:18:49,417 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:18:49,434 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:19:27,104 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:19:27,105 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:19:27,105 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:19:30,549 - WARNING - services.panel - JSON parse failed, text={"success":true,"msg":" You have successfully logged into your account.","obj":null}
+2026-03-23 22:19:30,549 - WARNING - services.panel - LOGIN DEBUG: status=200 data={}
+2026-03-23 22:19:30,549 - ERROR - services.panel - Ошибка аутентификации 3X-UI: status=200 msg=None
+2026-03-23 22:19:30,556 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:19:30,619 - INFO - __main__ - Бот запущен
+2026-03-23 22:19:30,619 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:19:30,631 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:21:29,549 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:21:29,550 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:21:29,550 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:21:32,980 - WARNING - services.panel - LOGIN DEBUG: status=200 data={'success': True, 'msg': ' You have successfully logged into your account.', 'obj': None}
+2026-03-23 22:21:32,980 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-23 22:21:32,986 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:21:33,066 - INFO - __main__ - Бот запущен
+2026-03-23 22:21:33,067 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:21:33,083 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:22:55,879 - INFO - aiohttp.access - 204.76.203.212 [23/Mar/2026:22:22:55 +0400] "GET / HTTP/1.1" 404 174 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+2026-03-23 22:23:21,075 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:23:21,075 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:23:21,076 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:23:27,181 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-23 22:23:27,188 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:23:27,267 - INFO - __main__ - Бот запущен
+2026-03-23 22:23:27,268 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:23:27,283 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:24:32,940 - INFO - aiohttp.access - 205.210.31.244 [23/Mar/2026:22:24:32 +0400] "GET / HTTP/1.1" 404 174 "-" "Hello from Palo Alto Networks, find out more about our scans in https://docs-cortex.paloaltonetworks.com/r/1/Cortex-Xpanse/Scanning-activity"
+2026-03-23 22:27:14,544 - INFO - services.webhook - ITPAY webhook: payment.completed, id=310e17c5-4f5e-4d9a-a15e-2dfecc4b7148
+2026-03-23 22:27:14,552 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:27:14,552 - INFO - services.panel - Найдено 1 клиентов по base_email='user_794419497@kakoitovpn'
+2026-03-23 22:27:14,571 - INFO - services.panel - Клиент email=rUuser_794419497@kakoitovpn (inboundId=1, protocol=vless) успешно удалён
+2026-03-23 22:27:14,574 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:27:14,574 - ERROR - aiohttp.server - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_protocol.py", line 477, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_app.py", line 567, in _handle
+    return await handler(request)
+  File "/root/kakoi/services/webhook.py", line 93, in itpay_webhook_handler
+    vpn_url = await create_subscription(user_id, plan, db=db, panel=panel, extra_days=bonus_days)
+  File "/root/kakoi/services/subscriptions.py", line 45, in create_subscription
+    client = await panel.create_client(
+  File "/root/kakoi/services/panel.py", line 227, in create_client
+    expiry_ms = int((time.time() + days * 86400) * 1000)
+NameError: name 'time' is not defined
+2026-03-23 22:27:14,578 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:27:14 +0400] "POST /itpay/webhook HTTP/1.1" 500 246 "-" "python-requests/2.32.4"
+2026-03-23 22:27:14,702 - INFO - services.webhook - ITPAY webhook: payment.pay, id=310e17c5-4f5e-4d9a-a15e-2dfecc4b7148
+2026-03-23 22:27:14,707 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:27:14,707 - INFO - services.panel - Найдено 0 клиентов по base_email='user_794419497@kakoitovpn'
+2026-03-23 22:27:14,707 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 22:27:14,710 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:27:14,711 - ERROR - aiohttp.server - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_protocol.py", line 477, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_app.py", line 567, in _handle
+    return await handler(request)
+  File "/root/kakoi/services/webhook.py", line 93, in itpay_webhook_handler
+    vpn_url = await create_subscription(user_id, plan, db=db, panel=panel, extra_days=bonus_days)
+  File "/root/kakoi/services/subscriptions.py", line 45, in create_subscription
+    client = await panel.create_client(
+  File "/root/kakoi/services/panel.py", line 227, in create_client
+    expiry_ms = int((time.time() + days * 86400) * 1000)
+NameError: name 'time' is not defined
+2026-03-23 22:27:14,711 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:27:14 +0400] "POST /itpay/webhook HTTP/1.1" 500 246 "-" "python-requests/2.32.4"
+2026-03-23 22:28:19,622 - INFO - services.webhook - ITPAY webhook: payment.completed, id=310e17c5-4f5e-4d9a-a15e-2dfecc4b7148
+2026-03-23 22:28:19,629 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:28:19,629 - INFO - services.panel - Найдено 0 клиентов по base_email='user_794419497@kakoitovpn'
+2026-03-23 22:28:19,629 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 22:28:19,632 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:28:19,632 - ERROR - aiohttp.server - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_protocol.py", line 477, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_app.py", line 567, in _handle
+    return await handler(request)
+  File "/root/kakoi/services/webhook.py", line 93, in itpay_webhook_handler
+    vpn_url = await create_subscription(user_id, plan, db=db, panel=panel, extra_days=bonus_days)
+  File "/root/kakoi/services/subscriptions.py", line 45, in create_subscription
+    client = await panel.create_client(
+  File "/root/kakoi/services/panel.py", line 227, in create_client
+    expiry_ms = int((time.time() + days * 86400) * 1000)
+NameError: name 'time' is not defined
+2026-03-23 22:28:19,633 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:28:19 +0400] "POST /itpay/webhook HTTP/1.1" 500 246 "-" "python-requests/2.32.4"
+2026-03-23 22:28:19,753 - INFO - services.webhook - ITPAY webhook: payment.pay, id=310e17c5-4f5e-4d9a-a15e-2dfecc4b7148
+2026-03-23 22:28:19,756 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:28:19,756 - INFO - services.panel - Найдено 0 клиентов по base_email='user_794419497@kakoitovpn'
+2026-03-23 22:28:19,756 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 22:28:19,759 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:28:19,759 - ERROR - aiohttp.server - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_protocol.py", line 477, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_app.py", line 567, in _handle
+    return await handler(request)
+  File "/root/kakoi/services/webhook.py", line 93, in itpay_webhook_handler
+    vpn_url = await create_subscription(user_id, plan, db=db, panel=panel, extra_days=bonus_days)
+  File "/root/kakoi/services/subscriptions.py", line 45, in create_subscription
+    client = await panel.create_client(
+  File "/root/kakoi/services/panel.py", line 227, in create_client
+    expiry_ms = int((time.time() + days * 86400) * 1000)
+NameError: name 'time' is not defined
+2026-03-23 22:28:19,759 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:28:19 +0400] "POST /itpay/webhook HTTP/1.1" 500 246 "-" "python-requests/2.32.4"
+2026-03-23 22:29:04,807 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:29:04,808 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:29:04,808 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:29:08,404 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-23 22:29:08,411 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:29:08,486 - INFO - __main__ - Бот запущен
+2026-03-23 22:29:08,486 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:29:08,503 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:29:43,388 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-23 22:29:43,395 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:29:43,464 - INFO - __main__ - Бот запущен
+2026-03-23 22:29:43,465 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:29:43,479 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:30:06,133 - INFO - aiohttp.access - 159.223.57.47 [23/Mar/2026:22:30:06 +0400] "GET / HTTP/1.1" 404 174 "-" "-"
+2026-03-23 22:30:24,037 - INFO - aiogram.middlewares - Answer to callback query id=3412005762572568936
+2026-03-23 22:30:24,057 - INFO - aiogram.event - Update id=902943384 is handled. Duration 116 ms by bot id=8657485502
+2026-03-23 22:30:24,741 - INFO - services.webhook - ITPAY webhook: payment.completed, id=310e17c5-4f5e-4d9a-a15e-2dfecc4b7148
+2026-03-23 22:30:24,748 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:30:24,748 - INFO - services.panel - Найдено 0 клиентов по base_email='user_794419497@kakoitovpn'
+2026-03-23 22:30:24,748 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 22:30:24,750 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:30:24,750 - ERROR - aiohttp.server - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_protocol.py", line 477, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_app.py", line 567, in _handle
+    return await handler(request)
+  File "/root/kakoi/services/webhook.py", line 93, in itpay_webhook_handler
+    vpn_url = await create_subscription(user_id, plan, db=db, panel=panel, extra_days=bonus_days)
+  File "/root/kakoi/services/subscriptions.py", line 45, in create_subscription
+    client = await panel.create_client(
+  File "/root/kakoi/services/panel.py", line 230, in create_client
+    sub_id = f"user{random.randint(100000, 999999)}"
+NameError: name 'random' is not defined
+2026-03-23 22:30:24,751 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:30:24 +0400] "POST /itpay/webhook HTTP/1.1" 500 246 "-" "python-requests/2.32.4"
+2026-03-23 22:30:24,885 - INFO - services.webhook - ITPAY webhook: payment.pay, id=310e17c5-4f5e-4d9a-a15e-2dfecc4b7148
+2026-03-23 22:30:24,889 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:30:24,889 - INFO - services.panel - Найдено 0 клиентов по base_email='user_794419497@kakoitovpn'
+2026-03-23 22:30:24,889 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 22:30:24,891 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:30:24,892 - ERROR - aiohttp.server - Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_protocol.py", line 477, in _handle_request
+    resp = await request_handler(request)
+  File "/usr/local/lib/python3.8/dist-packages/aiohttp/web_app.py", line 567, in _handle
+    return await handler(request)
+  File "/root/kakoi/services/webhook.py", line 93, in itpay_webhook_handler
+    vpn_url = await create_subscription(user_id, plan, db=db, panel=panel, extra_days=bonus_days)
+  File "/root/kakoi/services/subscriptions.py", line 45, in create_subscription
+    client = await panel.create_client(
+  File "/root/kakoi/services/panel.py", line 230, in create_client
+    sub_id = f"user{random.randint(100000, 999999)}"
+NameError: name 'random' is not defined
+2026-03-23 22:30:24,892 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:30:24 +0400] "POST /itpay/webhook HTTP/1.1" 500 246 "-" "python-requests/2.32.4"
+2026-03-23 22:30:25,595 - INFO - aiogram.middlewares - Answer to callback query id=3412005760947576353
+2026-03-23 22:30:25,613 - INFO - aiogram.event - Update id=902943385 is handled. Duration 571 ms by bot id=8657485502
+2026-03-23 22:31:02,685 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-23 22:31:02,693 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:31:02,759 - INFO - __main__ - Бот запущен
+2026-03-23 22:31:02,760 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:31:02,773 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:31:22,142 - INFO - aiogram.middlewares - Answer to callback query id=3412005760022736238
+2026-03-23 22:31:22,161 - INFO - aiogram.event - Update id=902943386 is handled. Duration 114 ms by bot id=8657485502
+2026-03-23 22:31:33,777 - INFO - aiogram.middlewares - Answer to callback query id=3412005763000797356
+2026-03-23 22:31:33,795 - INFO - aiogram.event - Update id=902943387 is handled. Duration 538 ms by bot id=8657485502
+2026-03-23 22:31:49,836 - INFO - services.webhook - ITPAY webhook: payment.completed, id=4b49b594-2250-45b8-963b-1cb73e5ac01d
+2026-03-23 22:31:49,844 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:31:49,844 - INFO - services.panel - Найдено 0 клиентов по base_email='user_794419497@kakoitovpn'
+2026-03-23 22:31:49,844 - INFO - services.panel - Клиенты с частью email 'user_794419497@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 22:31:49,847 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:31:49,855 - INFO - services.panel - Клиент user_794419497@kakoitovpn успешно создан в inbound 1 (vless)
+2026-03-23 22:31:49,993 - WARNING - utils.helpers - HTML parse error for 1794419497: Telegram server says - Bad Request: chat not found
+2026-03-23 22:31:50,096 - ERROR - utils.helpers - Ошибка отправки 1794419497: Telegram server says - Bad Request: chat not found
+2026-03-23 22:31:50,147 - WARNING - utils.helpers - HTML parse error for 987654321: Telegram server says - Bad Request: chat not found
+2026-03-23 22:31:50,236 - ERROR - utils.helpers - Ошибка отправки 987654321: Telegram server says - Bad Request: chat not found
+2026-03-23 22:31:50,237 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:31:49 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:31:50,356 - INFO - services.webhook - ITPAY webhook: payment.pay, id=4b49b594-2250-45b8-963b-1cb73e5ac01d
+2026-03-23 22:31:50,357 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:31:50 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:33:46,910 - INFO - aiogram.event - Update id=902943388 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-23 22:33:49,687 - INFO - aiogram.event - Update id=902943389 is handled. Duration 132 ms by bot id=8657485502
+2026-03-23 22:33:52,185 - INFO - aiogram.event - Update id=902943390 is handled. Duration 139 ms by bot id=8657485502
+2026-03-23 22:33:56,639 - INFO - aiogram.middlewares - Answer to callback query id=4627696355234711958
+2026-03-23 22:33:56,663 - INFO - aiogram.event - Update id=902943391 is handled. Duration 150 ms by bot id=8657485502
+2026-03-23 22:33:59,921 - INFO - aiogram.event - Update id=902943392 is handled. Duration 109 ms by bot id=8657485502
+2026-03-23 22:34:02,831 - INFO - aiogram.middlewares - Answer to callback query id=4627696356819306935
+2026-03-23 22:34:02,854 - INFO - aiogram.event - Update id=902943393 is handled. Duration 566 ms by bot id=8657485502
+2026-03-23 22:34:30,015 - INFO - services.webhook - ITPAY webhook: payment.completed, id=70b8cd20-295e-4e14-aa70-cf331d667048
+2026-03-23 22:34:30,025 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:34:30,025 - INFO - services.panel - Найдено 0 клиентов по base_email='user_1077469521@kakoitovpn'
+2026-03-23 22:34:30,025 - INFO - services.panel - Клиенты с частью email 'user_1077469521@kakoitovpn' не найдены, ничего не удаляем
+2026-03-23 22:34:30,030 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:34:30,038 - INFO - services.panel - Клиент user_1077469521@kakoitovpn успешно создан в inbound 1 (vless)
+2026-03-23 22:34:30,178 - WARNING - utils.helpers - HTML parse error for 1794419497: Telegram server says - Bad Request: chat not found
+2026-03-23 22:34:30,274 - ERROR - utils.helpers - Ошибка отправки 1794419497: Telegram server says - Bad Request: chat not found
+2026-03-23 22:34:30,320 - WARNING - utils.helpers - HTML parse error for 987654321: Telegram server says - Bad Request: chat not found
+2026-03-23 22:34:30,410 - ERROR - utils.helpers - Ошибка отправки 987654321: Telegram server says - Bad Request: chat not found
+2026-03-23 22:34:30,411 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:34:30 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:34:30,535 - INFO - services.webhook - ITPAY webhook: payment.pay, id=70b8cd20-295e-4e14-aa70-cf331d667048
+2026-03-23 22:34:30,536 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:34:30 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:35:25,056 - INFO - services.webhook - ITPAY webhook: payment.completed, id=310e17c5-4f5e-4d9a-a15e-2dfecc4b7148
+2026-03-23 22:35:25,063 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:35:25,064 - INFO - services.panel - Найдено 1 клиентов по base_email='user_794419497@kakoitovpn'
+2026-03-23 22:35:25,070 - INFO - services.panel - Клиент email=B1user_794419497@kakoitovpn (inboundId=1, protocol=vless) успешно удалён
+2026-03-23 22:35:25,072 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:35:25,078 - INFO - services.panel - Клиент user_794419497@kakoitovpn успешно создан в inbound 1 (vless)
+2026-03-23 22:35:25,199 - WARNING - utils.helpers - HTML parse error for 1794419497: Telegram server says - Bad Request: chat not found
+2026-03-23 22:35:25,292 - ERROR - utils.helpers - Ошибка отправки 1794419497: Telegram server says - Bad Request: chat not found
+2026-03-23 22:35:25,348 - WARNING - utils.helpers - HTML parse error for 987654321: Telegram server says - Bad Request: chat not found
+2026-03-23 22:35:25,470 - ERROR - utils.helpers - Ошибка отправки 987654321: Telegram server says - Bad Request: chat not found
+2026-03-23 22:35:25,471 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:35:25 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:35:30,058 - INFO - services.webhook - ITPAY webhook: payment.pay, id=310e17c5-4f5e-4d9a-a15e-2dfecc4b7148
+2026-03-23 22:35:30,059 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:35:30 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:39:18,477 - INFO - aiohttp.access - 139.59.126.122 [23/Mar/2026:22:39:18 +0400] "GET / HTTP/1.1" 404 174 "-" "-"
+2026-03-23 22:46:15,981 - INFO - aiohttp.access - 143.198.204.151 [23/Mar/2026:22:46:15 +0400] "GET / HTTP/1.1" 404 174 "-" "-"
+2026-03-23 22:48:21,614 - INFO - aiohttp.access - 204.76.203.212 [23/Mar/2026:22:48:21 +0400] "GET / HTTP/1.1" 404 174 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+2026-03-23 22:48:39,564 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-23 22:48:39,565 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:48:39,565 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:51:21,133 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-23 22:51:21,138 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:51:21,214 - INFO - __main__ - Бот запущен
+2026-03-23 22:51:21,215 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:51:21,230 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:52:17,518 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-23 22:52:17,519 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:52:17,519 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-23 22:53:45,794 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-23 22:53:45,800 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-23 22:53:45,899 - INFO - __main__ - Бот запущен
+2026-03-23 22:53:45,900 - INFO - aiogram.dispatcher - Start polling
+2026-03-23 22:53:45,916 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-23 22:54:03,338 - INFO - aiogram.event - Update id=902943394 is handled. Duration 111 ms by bot id=8657485502
+2026-03-23 22:54:10,162 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:54:10,316 - INFO - aiogram.event - Update id=902943395 is handled. Duration 162 ms by bot id=8657485502
+2026-03-23 22:54:12,447 - INFO - aiogram.event - Update id=902943396 is handled. Duration 273 ms by bot id=8657485502
+2026-03-23 22:54:13,291 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:54:13,294 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:54:13,426 - INFO - aiogram.event - Update id=902943397 is handled. Duration 139 ms by bot id=8657485502
+2026-03-23 22:54:15,388 - INFO - aiogram.event - Update id=902943398 is handled. Duration 112 ms by bot id=8657485502
+2026-03-23 22:54:17,826 - INFO - aiogram.middlewares - Answer to callback query id=3412005761354252348
+2026-03-23 22:54:17,952 - INFO - aiogram.event - Update id=902943399 is handled. Duration 845 ms by bot id=8657485502
+2026-03-23 22:55:01,302 - INFO - services.webhook - ITPAY webhook: payment.completed, id=d4cea784-8e0e-4c92-b12c-7401c9c6e0b3
+2026-03-23 22:55:01,311 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:55:01,311 - INFO - services.panel - Найдено 1 клиентов по base_email='user_794419497@kakoitovpn'
+2026-03-23 22:55:01,318 - INFO - services.panel - Клиент email=C7user_794419497@kakoitovpn (inboundId=1, protocol=vless) успешно удалён
+2026-03-23 22:55:01,320 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:55:01,326 - INFO - services.panel - Клиент user_794419497@kakoitovpn успешно создан в inbound 1 (vless)
+2026-03-23 22:55:01,465 - WARNING - utils.helpers - HTML parse error for 987654321: Telegram server says - Bad Request: chat not found
+2026-03-23 22:55:01,579 - ERROR - utils.helpers - Ошибка отправки 987654321: Telegram server says - Bad Request: chat not found
+2026-03-23 22:55:01,580 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:55:01 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:55:01,706 - INFO - services.webhook - ITPAY webhook: payment.pay, id=d4cea784-8e0e-4c92-b12c-7401c9c6e0b3
+2026-03-23 22:55:01,707 - INFO - aiohttp.access - 78.140.242.15 [23/Mar/2026:22:55:01 +0400] "POST /itpay/webhook HTTP/1.1" 200 172 "-" "python-requests/2.32.4"
+2026-03-23 22:55:24,259 - INFO - aiogram.middlewares - Answer to callback query id=3412005761306981359
+2026-03-23 22:55:24,282 - INFO - aiogram.event - Update id=902943400 is handled. Duration 181 ms by bot id=8657485502
+2026-03-23 22:56:27,307 - INFO - aiogram.event - Update id=902943401 is handled. Duration 223 ms by bot id=8657485502
+2026-03-23 22:56:32,475 - INFO - aiogram.event - Update id=902943402 is handled. Duration 420 ms by bot id=8657485502
+2026-03-23 22:56:35,551 - INFO - aiogram.middlewares - Answer to callback query id=3412005760978884046
+2026-03-23 22:56:35,574 - INFO - aiogram.event - Update id=902943403 is handled. Duration 126 ms by bot id=8657485502
+2026-03-23 22:56:37,003 - INFO - aiogram.middlewares - Answer to callback query id=3412005761911382034
+2026-03-23 22:56:37,085 - INFO - aiogram.event - Update id=902943404 is handled. Duration 448 ms by bot id=8657485502
+2026-03-23 22:56:37,459 - INFO - aiogram.middlewares - Answer to callback query id=3412005761494711528
+2026-03-23 22:56:37,511 - INFO - aiogram.event - Update id=902943405 is handled. Duration 171 ms by bot id=8657485502
+2026-03-23 22:56:38,364 - INFO - aiogram.middlewares - Answer to callback query id=3412005762925427610
+2026-03-23 22:56:38,396 - INFO - aiogram.event - Update id=902943406 is handled. Duration 100 ms by bot id=8657485502
+2026-03-23 22:56:39,559 - INFO - aiogram.middlewares - Answer to callback query id=3412005762696164685
+2026-03-23 22:56:39,578 - INFO - aiogram.event - Update id=902943407 is handled. Duration 86 ms by bot id=8657485502
+2026-03-23 22:56:40,587 - INFO - aiogram.middlewares - Answer to callback query id=3412005759916561201
+2026-03-23 22:56:40,607 - INFO - aiogram.event - Update id=902943408 is handled. Duration 91 ms by bot id=8657485502
+2026-03-23 22:56:41,715 - INFO - aiogram.middlewares - Answer to callback query id=3412005759460174896
+2026-03-23 22:56:41,734 - INFO - aiogram.event - Update id=902943409 is handled. Duration 85 ms by bot id=8657485502
+2026-03-23 22:56:42,736 - INFO - aiogram.middlewares - Answer to callback query id=3412005761766589788
+2026-03-23 22:56:42,758 - INFO - aiogram.event - Update id=902943410 is handled. Duration 86 ms by bot id=8657485502
+2026-03-23 22:56:43,839 - INFO - aiogram.middlewares - Answer to callback query id=3412005761615686499
+2026-03-23 22:56:43,888 - INFO - aiogram.event - Update id=902943411 is handled. Duration 174 ms by bot id=8657485502
+2026-03-23 22:56:46,869 - INFO - aiogram.event - Update id=902943412 is handled. Duration 74 ms by bot id=8657485502
+2026-03-23 22:56:48,546 - INFO - aiogram.middlewares - Answer to callback query id=3412005761560334249
+2026-03-23 22:56:48,566 - INFO - aiogram.event - Update id=902943413 is handled. Duration 130 ms by bot id=8657485502
+2026-03-23 22:56:49,975 - INFO - aiogram.event - Update id=902943414 is handled. Duration 90 ms by bot id=8657485502
+2026-03-23 22:56:51,327 - INFO - aiogram.event - Update id=902943415 is handled. Duration 75 ms by bot id=8657485502
+2026-03-23 22:56:53,018 - INFO - aiogram.event - Update id=902943416 is handled. Duration 79 ms by bot id=8657485502
+2026-03-23 22:56:56,906 - INFO - aiogram.event - Update id=902943417 is handled. Duration 72 ms by bot id=8657485502
+2026-03-23 22:56:59,786 - INFO - aiogram.middlewares - Answer to callback query id=3412005759948560366
+2026-03-23 22:56:59,804 - INFO - aiogram.event - Update id=902943418 is handled. Duration 102 ms by bot id=8657485502
+2026-03-23 22:57:00,931 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:57:01,011 - INFO - aiogram.event - Update id=902943419 is handled. Duration 86 ms by bot id=8657485502
+2026-03-23 22:57:07,381 - INFO - aiogram.event - Update id=902943420 is handled. Duration 74 ms by bot id=8657485502
+2026-03-23 22:57:09,346 - INFO - aiogram.event - Update id=902943421 is handled. Duration 78 ms by bot id=8657485502
+2026-03-23 22:57:11,539 - INFO - aiogram.event - Update id=902943422 is handled. Duration 71 ms by bot id=8657485502
+2026-03-23 22:57:13,689 - INFO - aiogram.event - Update id=902943423 is handled. Duration 83 ms by bot id=8657485502
+2026-03-23 22:57:15,791 - INFO - aiogram.event - Update id=902943424 is handled. Duration 69 ms by bot id=8657485502
+2026-03-23 22:57:27,464 - INFO - aiogram.event - Update id=902943425 is handled. Duration 78 ms by bot id=8657485502
+2026-03-23 22:57:29,410 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:57:29,487 - INFO - aiogram.event - Update id=902943426 is handled. Duration 84 ms by bot id=8657485502
+2026-03-23 22:57:32,235 - INFO - aiogram.event - Update id=902943427 is handled. Duration 129 ms by bot id=8657485502
+2026-03-23 22:57:33,325 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:57:33,328 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 22:57:33,539 - INFO - aiogram.event - Update id=902943428 is handled. Duration 227 ms by bot id=8657485502
+2026-03-23 22:57:35,939 - INFO - aiogram.event - Update id=902943429 is handled. Duration 106 ms by bot id=8657485502
+2026-03-23 22:58:02,446 - INFO - aiogram.event - Update id=902943430 is handled. Duration 128 ms by bot id=8657485502
+2026-03-23 22:58:07,052 - INFO - aiogram.event - Update id=902943431 is handled. Duration 451 ms by bot id=8657485502
+2026-03-23 23:08:45,181 - INFO - aiohttp.access - 213.160.77.246 [23/Mar/2026:23:08:45 +0400] "CONNECT  HTTP/1.1" 404 174 "-" "Go-http-client/1.1"
+2026-03-23 23:09:46,405 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 23:09:46,517 - INFO - aiogram.event - Update id=902943432 is handled. Duration 120 ms by bot id=8657485502
+2026-03-23 23:09:48,418 - INFO - aiogram.event - Update id=902943433 is handled. Duration 86 ms by bot id=8657485502
+2026-03-23 23:09:48,950 - INFO - aiohttp.access - 31.56.208.84 [23/Mar/2026:23:09:48 +0400] "GET /login HTTP/1.1" 404 193 "-" "Go-http-client/1.1"
+2026-03-23 23:09:49,458 - INFO - aiogram.event - Update id=902943434 is handled. Duration 121 ms by bot id=8657485502
+2026-03-23 23:09:51,865 - INFO - aiogram.middlewares - Answer to callback query id=3412005762749467840
+2026-03-23 23:09:51,888 - INFO - aiogram.event - Update id=902943435 is handled. Duration 223 ms by bot id=8657485502
+2026-03-23 23:09:52,091 - INFO - aiogram.event - Update id=902943436 is handled. Duration 92 ms by bot id=8657485502
+2026-03-23 23:09:53,355 - INFO - services.panel - Получено 1 inbounds
+2026-03-23 23:09:53,436 - INFO - aiogram.event - Update id=902943437 is handled. Duration 84 ms by bot id=8657485502
+2026-03-23 23:09:55,506 - INFO - aiogram.event - Update id=902943438 is handled. Duration 93 ms by bot id=8657485502
+2026-03-23 23:11:16,501 - INFO - aiohttp.access - 147.182.198.207 [23/Mar/2026:23:11:16 +0400] "GET / HTTP/1.1" 404 174 "-" "-"
+2026-03-23 23:13:57,671 - INFO - aiohttp.access - 204.76.203.212 [23/Mar/2026:23:13:57 +0400] "GET / HTTP/1.1" 404 174 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+2026-03-23 23:16:02,146 - INFO - aiohttp.access - 157.230.44.79 [23/Mar/2026:23:16:02 +0400] "GET / HTTP/1.1" 404 174 "-" "-"
+2026-03-23 23:19:26,835 - INFO - aiohttp.access - 45.156.87.91 [23/Mar/2026:23:19:26 +0400] "GET /login HTTP/1.1" 404 174 "-" "Go-http-client/1.1"

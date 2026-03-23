@@ -1,0 +1,48 @@
+{
+  "plans": [
+    {
+      "id": "trial",
+      "name": "Пробный",
+      "price_rub": 0,
+      "ip_limit": 1,
+      "traffic_gb": 10,
+      "duration_days": 3,
+      "description": "NL",
+      "active": true,
+      "sort": 1
+    },
+    {
+      "id": "basic",
+      "name": "Месяц",
+      "price_rub": 1,
+      "ip_limit": 5,
+      "traffic_gb": 1000,
+      "duration_days": 30,
+      "description": "NL",
+      "active": true,
+      "sort": 2
+    },
+    {
+      "id": "standard",
+      "name": "3 Месяца",
+      "price_rub": 500,
+      "ip_limit": 5,
+      "traffic_gb": 3500,
+      "duration_days": 90,
+      "description": "NL",
+      "active": true,
+      "sort": 3
+    },
+    {
+      "id": "premium",
+      "name": "Премиум",
+      "price_rub": 300,
+      "ip_limit": 10,
+      "traffic_gb": 2048,
+      "duration_days": 30,
+      "description": "NL",
+      "active": false,
+      "sort": 4
+    }
+  ]
+}
