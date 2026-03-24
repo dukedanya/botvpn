@@ -68,6 +68,16 @@ class Database:
             columns = [row[1] for row in await cursor.fetchall()]
             if "ref_system_type" not in columns:
                 await self.conn.execute("ALTER TABLE users ADD COLUMN ref_system_type INTEGER DEFAULT 1")
+            if "ref_rewarded_count" not in columns:
+                await self.conn.execute("ALTER TABLE users ADD COLUMN ref_rewarded_count INTEGER DEFAULT 0")
+            if "frozen_until" not in columns:
+                await self.conn.execute("ALTER TABLE users ADD COLUMN frozen_until TIMESTAMP DEFAULT NULL")
+            if "notified_3d" not in columns:
+                await self.conn.execute("ALTER TABLE users ADD COLUMN notified_3d INTEGER DEFAULT 0")
+            if "notified_1d" not in columns:
+                await self.conn.execute("ALTER TABLE users ADD COLUMN notified_1d INTEGER DEFAULT 0")
+            if "notified_1h" not in columns:
+                await self.conn.execute("ALTER TABLE users ADD COLUMN notified_1h INTEGER DEFAULT 0")
             if "balance" not in columns:
                 await self.conn.execute("ALTER TABLE users ADD COLUMN balance REAL DEFAULT 0")
             await self.conn.commit()
@@ -88,6 +98,21 @@ class Database:
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                     processed_at TIMESTAMP,
                     FOREIGN KEY (user_id) REFERENCES users(user_id)
+                )
+                """
+            )
+            await self.conn.commit()
+
+
+            await self.conn.execute(
+                """
+                CREATE TABLE IF NOT EXISTS ref_history (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    user_id INTEGER NOT NULL,
+                    ref_user_id INTEGER NOT NULL,
+                    amount REAL DEFAULT 0,
+                    bonus_days INTEGER DEFAULT 0,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
                 """
             )
@@ -227,9 +252,9 @@ class Database:
                 """
                 UPDATE users
                 SET ref_by = ?
-                WHERE user_id = ? AND (ref_by IS NULL OR ref_by = 0)
+                WHERE user_id = ? AND user_id != ? AND (ref_by IS NULL OR ref_by = 0)
                 """,
-                (ref_by, user_id),
+                (ref_by, user_id, user_id),
             )
             await self.conn.commit()
             return cursor.rowcount > 0
@@ -294,6 +319,94 @@ class Database:
 
     async def set_has_subscription(self, user_id: int) -> bool:
         return await self.update_user(user_id, has_subscription=1)
+
+
+
+    async def add_ref_history(self, user_id: int, ref_user_id: int, amount: float = 0, bonus_days: int = 0) -> None:
+        """Записывает начисление в историю."""
+        if not self.conn:
+            return
+        async with self.lock:
+            await self.conn.execute(
+                "INSERT INTO ref_history (user_id, ref_user_id, amount, bonus_days) VALUES (?, ?, ?, ?)",
+                (user_id, ref_user_id, amount, bonus_days),
+            )
+            await self.conn.commit()
+
+    async def get_ref_history(self, user_id: int, limit: int = 10) -> list:
+        """История начислений пользователя."""
+        if not self.conn:
+            return []
+        async with self.lock:
+            cursor = await self.conn.execute(
+                "SELECT * FROM ref_history WHERE user_id = ? ORDER BY created_at DESC LIMIT ?",
+                (user_id, limit),
+            )
+            rows = await cursor.fetchall()
+            return [dict(row) for row in rows]
+
+    async def get_referrals_list(self, user_id: int) -> list:
+        """Список рефералов с флагом оплаты."""
+        if not self.conn:
+            return []
+        async with self.lock:
+            cursor = await self.conn.execute(
+                "SELECT user_id, ref_rewarded, join_date FROM users WHERE ref_by = ? ORDER BY join_date DESC",
+                (user_id,),
+            )
+            rows = await cursor.fetchall()
+            return [dict(row) for row in rows]
+
+
+    async def get_all_subscribers(self) -> list:
+        """Все пользователи с активной подпиской."""
+        if not self.conn:
+            return []
+        async with self.lock:
+            cursor = await self.conn.execute(
+                "SELECT * FROM users WHERE vpn_url != '' AND vpn_url IS NOT NULL AND banned = 0"
+            )
+            rows = await cursor.fetchall()
+            return [dict(row) for row in rows]
+
+    async def set_frozen(self, user_id: int, frozen_until: str) -> bool:
+        return await self.update_user(user_id, frozen_until=frozen_until)
+
+    async def clear_frozen(self, user_id: int) -> bool:
+        return await self.update_user(user_id, frozen_until=None)
+
+    async def reset_expiry_notifications(self, user_id: int) -> bool:
+        return await self.update_user(user_id, notified_3d=0, notified_1d=0, notified_1h=0)
+
+    async def get_top_referrers(self, limit: int = 10) -> list:
+        """Топ рефереров по количеству оплативших рефералов."""
+        if not self.conn:
+            return []
+        async with self.lock:
+            cursor = await self.conn.execute(
+                """
+                SELECT ref_by, COUNT(*) as paid_count
+                FROM users
+                WHERE ref_by IS NOT NULL AND ref_rewarded = 1
+                GROUP BY ref_by
+                ORDER BY paid_count DESC
+                LIMIT ?
+                """,
+                (limit,),
+            )
+            rows = await cursor.fetchall()
+            return [dict(row) for row in rows]
+
+    async def increment_ref_rewarded_count(self, user_id: int) -> None:
+        """Увеличивает счётчик успешных рефералов."""
+        if not self.conn:
+            return
+        async with self.lock:
+            await self.conn.execute(
+                "UPDATE users SET ref_rewarded_count = COALESCE(ref_rewarded_count, 0) + 1 WHERE user_id = ?",
+                (user_id,),
+            )
+            await self.conn.commit()
 
     async def ensure_ref_code(self, user_id: int) -> Optional[str]:
         user = await self.get_user(user_id)

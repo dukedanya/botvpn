@@ -86,14 +86,14 @@ async def profile_menu(message: Message, db: Database, panel: PanelAPI):
             "URL для подключения:\n"
             f"{Config.SUB_PANEL_BASE}Admin"
         )
-        await replace_message(user_id, text, reply_markup=profile_keyboard(active_sub), delete_user_msg=message)
+        await replace_message(user_id, text, reply_markup=profile_keyboard(active_sub, is_frozen=bool((await db.get_user(user_id)).get('frozen_until'))), delete_user_msg=message)
         return
 
     user_data = await db.get_user(user_id)
 
     if not user_data or not active_sub:
         text = "👤 <b>Ваша подписка VPN</b>\n\nУ вас нет активной подписки."
-        await replace_message(user_id, text, reply_markup=profile_keyboard(active_sub), delete_user_msg=message)
+        await replace_message(user_id, text, reply_markup=profile_keyboard(active_sub, is_frozen=bool((await db.get_user(user_id)).get('frozen_until'))), delete_user_msg=message)
         return
 
     base_email = f"user_{user_id}@{Config.PANEL_EMAIL_DOMAIN}"
@@ -143,7 +143,7 @@ async def profile_menu(message: Message, db: Database, panel: PanelAPI):
             "<i>Статистика трафика временно недоступна</i>"
         )
 
-    await replace_message(user_id, text, reply_markup=profile_keyboard(active_sub), delete_user_msg=message)
+    await replace_message(user_id, text, reply_markup=profile_keyboard(active_sub, is_frozen=bool((await db.get_user(user_id)).get('frozen_until'))), delete_user_msg=message)
 
 @router.message(F.text == "📦 Подписки")
 async def subscriptions_menu(message: Message, db: Database):

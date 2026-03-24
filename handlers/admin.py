@@ -138,47 +138,6 @@ async def withdraw_reject(callback: CallbackQuery):
     else:
         await callback.answer("Ошибка обработки запроса", show_alert=True)
 
-@router.callback_query(F.data == "trial_accept")
-async def trial_accept(callback: CallbackQuery):
-    db = get_db()
-    panel = get_panel()
-    user_id = callback.from_user.id
-    await db.add_user(user_id)
-
-    # Проверяем, что ещё не использовал и не отказывался
-    user_data = await db.get_user(user_id)
-    if user_data.get("trial_used") or user_data.get("trial_declined") or await is_active_subscription(user_id, db=db, panel=panel):
-        await callback.answer("Пробный период уже недоступен", show_alert=True)
-        return
-
-    trial_plan = get_by_id("trial")
-    if not trial_plan:
-        await callback.answer("Пробный тариф не найден", show_alert=True)
-        return
-
-    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
-    if vpn_url:
-        await db.mark_trial_used(user_id)
-        await db.set_has_subscription(user_id)
-        text = (
-            "✅ <b>Пробная подписка успешно создана!</b>\n\n"
-            f"Тариф: <b>{trial_plan.get('name', 'Пробный')}</b>\n"
-            f"Устройств: до {trial_plan.get('ip_limit', 1)}\n"
-            f"Трафик: {format_traffic(trial_plan.get('traffic_gb', 10))}\n"
-            f"Срок: {format_duration(trial_plan.get('duration_days', 3))}\n\n"
-            f"URL для подключения:\n<code>{vpn_url}</code>\n\n"
-            "Наслаждайтесь защищённым интернетом! 🎉"
-        )
-        keyboard = InlineKeyboardMarkup(
-            inline_keyboard=[[InlineKeyboardButton(text="Главное меню", callback_data="main_menu")]]
-        )
-        await callback.message.edit_text(text, reply_markup=keyboard)
-        # После выдачи пробного показываем меню подписок (теперь с активной подпиской)
-        await show_available_tariffs(user_id, True)
-    else:
-        await callback.answer("Ошибка создания пробной подписки", show_alert=True)
-
-    await callback.answer()
 
 @router.callback_query(F.data == "trial_decline")
 async def trial_decline(callback: CallbackQuery):

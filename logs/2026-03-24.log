@@ -1,0 +1,1548 @@
+nohup: ignoring input
+2026-03-24 01:06:47,568 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-24 01:06:47,575 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-24 01:06:47,643 - INFO - __main__ - Бот запущен
+2026-03-24 01:06:47,644 - INFO - aiogram.dispatcher - Start polling
+2026-03-24 01:06:47,660 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:08:35,328 - INFO - aiogram.middlewares - Answer to callback query id=3412005762945733258
+2026-03-24 01:08:35,354 - INFO - aiogram.event - Update id=902943690 is handled. Duration 203 ms by bot id=8657485502
+2026-03-24 01:08:36,946 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:08:36,949 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:08:37,065 - INFO - aiogram.event - Update id=902943691 is handled. Duration 126 ms by bot id=8657485502
+2026-03-24 01:08:38,329 - INFO - aiogram.middlewares - Answer to callback query id=1083679491979184904
+2026-03-24 01:08:38,368 - INFO - aiogram.event - Update id=902943692 is not handled. Duration 41 ms by bot id=8657485502
+2026-03-24 01:08:38,368 - ERROR - aiogram.event - Cause exception while process update id=902943692 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:08:39,173 - INFO - aiogram.event - Update id=902943693 is handled. Duration 134 ms by bot id=8657485502
+2026-03-24 01:08:43,792 - INFO - aiogram.event - Update id=902943694 is handled. Duration 109 ms by bot id=8657485502
+2026-03-24 01:08:46,334 - INFO - aiogram.event - Update id=902943695 is handled. Duration 123 ms by bot id=8657485502
+2026-03-24 01:08:48,428 - INFO - aiogram.middlewares - Answer to callback query id=3412005760502698380
+2026-03-24 01:08:48,453 - INFO - aiogram.event - Update id=902943696 is handled. Duration 110 ms by bot id=8657485502
+2026-03-24 01:08:57,702 - INFO - aiogram.middlewares - Answer to callback query id=3412005762190483451
+2026-03-24 01:08:57,726 - INFO - aiogram.event - Update id=902943697 is handled. Duration 86 ms by bot id=8657485502
+2026-03-24 01:09:01,856 - INFO - aiogram.event - Update id=902943698 is handled. Duration 90 ms by bot id=8657485502
+2026-03-24 01:09:08,962 - INFO - aiogram.middlewares - Answer to callback query id=3412005759692821035
+2026-03-24 01:09:08,990 - INFO - aiogram.event - Update id=902943699 is handled. Duration 99 ms by bot id=8657485502
+2026-03-24 01:09:12,921 - INFO - aiogram.event - Update id=902943700 is handled. Duration 74 ms by bot id=8657485502
+2026-03-24 01:09:21,309 - INFO - aiogram.middlewares - Answer to callback query id=3412005762980045194
+2026-03-24 01:09:21,333 - INFO - aiogram.event - Update id=902943701 is handled. Duration 88 ms by bot id=8657485502
+2026-03-24 01:09:24,488 - INFO - aiogram.middlewares - Answer to callback query id=3412005758935131388
+2026-03-24 01:09:24,615 - INFO - aiogram.event - Update id=902943702 is handled. Duration 457 ms by bot id=8657485502
+2026-03-24 01:09:28,677 - INFO - aiogram.event - Update id=902943703 is handled. Duration 111 ms by bot id=8657485502
+2026-03-24 01:09:32,617 - INFO - aiogram.event - Update id=902943704 is handled. Duration 72 ms by bot id=8657485502
+2026-03-24 01:09:33,133 - INFO - aiogram.event - Update id=902943705 is handled. Duration 94 ms by bot id=8657485502
+2026-03-24 01:09:36,157 - INFO - aiogram.event - Update id=902943706 is handled. Duration 117 ms by bot id=8657485502
+2026-03-24 01:09:37,742 - INFO - aiogram.middlewares - Answer to callback query id=1083679492177117460
+2026-03-24 01:09:37,766 - INFO - aiogram.event - Update id=902943707 is not handled. Duration 27 ms by bot id=8657485502
+2026-03-24 01:09:37,766 - ERROR - aiogram.event - Cause exception while process update id=902943707 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:09:39,396 - INFO - aiogram.middlewares - Answer to callback query id=1083679491786728095
+2026-03-24 01:09:39,419 - INFO - aiogram.event - Update id=902943708 is not handled. Duration 27 ms by bot id=8657485502
+2026-03-24 01:09:39,420 - ERROR - aiogram.event - Cause exception while process update id=902943708 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:09:39,843 - INFO - aiogram.middlewares - Answer to callback query id=1083679492709904709
+2026-03-24 01:09:39,934 - INFO - aiogram.event - Update id=902943709 is not handled. Duration 93 ms by bot id=8657485502
+2026-03-24 01:09:39,935 - ERROR - aiogram.event - Cause exception while process update id=902943709 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:09:40,074 - INFO - aiogram.middlewares - Answer to callback query id=1083679490490193863
+2026-03-24 01:09:40,127 - INFO - aiogram.event - Update id=902943710 is not handled. Duration 55 ms by bot id=8657485502
+2026-03-24 01:09:40,127 - ERROR - aiogram.event - Cause exception while process update id=902943710 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:09:40,238 - INFO - aiogram.middlewares - Answer to callback query id=1083679490096480733
+2026-03-24 01:09:40,306 - INFO - aiogram.event - Update id=902943711 is not handled. Duration 70 ms by bot id=8657485502
+2026-03-24 01:09:40,306 - ERROR - aiogram.event - Cause exception while process update id=902943711 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:09:42,789 - INFO - aiogram.middlewares - Answer to callback query id=1083679490617725895
+2026-03-24 01:09:42,815 - INFO - aiogram.event - Update id=902943712 is not handled. Duration 29 ms by bot id=8657485502
+2026-03-24 01:09:42,815 - ERROR - aiogram.event - Cause exception while process update id=902943712 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:09:42,942 - INFO - aiogram.middlewares - Answer to callback query id=1083679492080322597
+2026-03-24 01:09:42,984 - INFO - aiogram.event - Update id=902943713 is not handled. Duration 45 ms by bot id=8657485502
+2026-03-24 01:09:42,984 - ERROR - aiogram.event - Cause exception while process update id=902943713 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:10:06,044 - INFO - aiogram.middlewares - Answer to callback query id=1083679493508636363
+2026-03-24 01:10:06,089 - INFO - aiogram.event - Update id=902943714 is not handled. Duration 47 ms by bot id=8657485502
+2026-03-24 01:10:06,089 - ERROR - aiogram.event - Cause exception while process update id=902943714 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:10:06,302 - INFO - aiogram.middlewares - Answer to callback query id=1083679491264040878
+2026-03-24 01:10:06,327 - INFO - aiogram.event - Update id=902943715 is not handled. Duration 27 ms by bot id=8657485502
+2026-03-24 01:10:06,327 - ERROR - aiogram.event - Cause exception while process update id=902943715 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:10:06,350 - INFO - aiogram.middlewares - Answer to callback query id=1083679490445148206
+2026-03-24 01:10:06,375 - INFO - aiogram.event - Update id=902943716 is not handled. Duration 29 ms by bot id=8657485502
+2026-03-24 01:10:06,376 - ERROR - aiogram.event - Cause exception while process update id=902943716 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:10:06,836 - INFO - aiogram.middlewares - Answer to callback query id=1083679489622865518
+2026-03-24 01:10:06,867 - INFO - aiogram.event - Update id=902943717 is not handled. Duration 33 ms by bot id=8657485502
+2026-03-24 01:10:06,867 - ERROR - aiogram.event - Cause exception while process update id=902943717 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:10:07,001 - INFO - aiogram.middlewares - Answer to callback query id=1083679493466083387
+2026-03-24 01:10:07,021 - INFO - aiogram.event - Update id=902943718 is not handled. Duration 22 ms by bot id=8657485502
+2026-03-24 01:10:07,021 - ERROR - aiogram.event - Cause exception while process update id=902943718 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:11:12,264 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-24 01:11:12,265 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:11:12,266 - INFO - aiogram.dispatcher - Polling stopped
+kages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:11:12,264 - WARNING - aiogram.dispatcher - Received SIGTERM signal
+2026-03-24 01:11:12,265 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:11:12,266 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-24 01:11:29,729 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-24 01:11:29,735 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-24 01:11:29,812 - INFO - __main__ - Бот запущен
+2026-03-24 01:11:29,813 - INFO - aiogram.dispatcher - Start polling
+2026-03-24 01:11:29,828 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:11:45,468 - INFO - aiogram.middlewares - Answer to callback query id=1083679490978522568
+2026-03-24 01:11:45,511 - INFO - aiogram.event - Update id=902943719 is not handled. Duration 45 ms by bot id=8657485502
+2026-03-24 01:11:45,512 - ERROR - aiogram.event - Cause exception while process update id=902943719 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:13,007 - INFO - aiogram.event - Update id=902943720 is handled. Duration 106 ms by bot id=8657485502
+2026-03-24 01:12:14,506 - INFO - aiogram.event - Update id=902943721 is handled. Duration 112 ms by bot id=8657485502
+2026-03-24 01:12:16,071 - INFO - aiogram.middlewares - Answer to callback query id=1083679493111784357
+2026-03-24 01:12:16,090 - INFO - aiogram.event - Update id=902943722 is not handled. Duration 21 ms by bot id=8657485502
+2026-03-24 01:12:16,091 - ERROR - aiogram.event - Cause exception while process update id=902943722 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:17,129 - INFO - aiogram.middlewares - Answer to callback query id=1083679489566102591
+2026-03-24 01:12:17,152 - INFO - aiogram.event - Update id=902943723 is not handled. Duration 25 ms by bot id=8657485502
+2026-03-24 01:12:17,152 - ERROR - aiogram.event - Cause exception while process update id=902943723 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:17,290 - INFO - aiogram.middlewares - Answer to callback query id=1083679490604955321
+2026-03-24 01:12:17,310 - INFO - aiogram.event - Update id=902943724 is not handled. Duration 22 ms by bot id=8657485502
+2026-03-24 01:12:17,310 - ERROR - aiogram.event - Cause exception while process update id=902943724 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:17,461 - INFO - aiogram.middlewares - Answer to callback query id=1083679492047218923
+2026-03-24 01:12:17,486 - INFO - aiogram.event - Update id=902943725 is not handled. Duration 27 ms by bot id=8657485502
+2026-03-24 01:12:17,487 - ERROR - aiogram.event - Cause exception while process update id=902943725 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:17,650 - INFO - aiogram.middlewares - Answer to callback query id=1083679491371491368
+2026-03-24 01:12:17,678 - INFO - aiogram.event - Update id=902943726 is not handled. Duration 30 ms by bot id=8657485502
+2026-03-24 01:12:17,678 - ERROR - aiogram.event - Cause exception while process update id=902943726 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:36,326 - INFO - aiogram.middlewares - Answer to callback query id=1083679489924868934
+2026-03-24 01:12:36,404 - INFO - aiogram.event - Update id=902943727 is not handled. Duration 80 ms by bot id=8657485502
+2026-03-24 01:12:36,405 - ERROR - aiogram.event - Cause exception while process update id=902943727 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:37,003 - INFO - aiogram.middlewares - Answer to callback query id=1083679489341450972
+2026-03-24 01:12:37,071 - INFO - aiogram.event - Update id=902943728 is not handled. Duration 70 ms by bot id=8657485502
+2026-03-24 01:12:37,072 - ERROR - aiogram.event - Cause exception while process update id=902943728 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:37,191 - INFO - aiogram.middlewares - Answer to callback query id=1083679491761907531
+2026-03-24 01:12:37,234 - INFO - aiogram.event - Update id=902943729 is not handled. Duration 47 ms by bot id=8657485502
+2026-03-24 01:12:37,235 - ERROR - aiogram.event - Cause exception while process update id=902943729 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:37,413 - INFO - aiogram.middlewares - Answer to callback query id=1083679492215767401
+2026-03-24 01:12:37,504 - INFO - aiogram.event - Update id=902943730 is not handled. Duration 93 ms by bot id=8657485502
+2026-03-24 01:12:37,504 - ERROR - aiogram.event - Cause exception while process update id=902943730 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:37,862 - INFO - aiogram.middlewares - Answer to callback query id=1083679493122941788
+2026-03-24 01:12:37,894 - INFO - aiogram.event - Update id=902943731 is not handled. Duration 33 ms by bot id=8657485502
+2026-03-24 01:12:37,894 - ERROR - aiogram.event - Cause exception while process update id=902943731 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:41,424 - INFO - aiogram.middlewares - Answer to callback query id=1083679492285716442
+2026-03-24 01:12:41,452 - INFO - aiogram.event - Update id=902943732 is not handled. Duration 30 ms by bot id=8657485502
+2026-03-24 01:12:41,452 - ERROR - aiogram.event - Cause exception while process update id=902943732 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:41,574 - INFO - aiogram.middlewares - Answer to callback query id=1083679489284696740
+2026-03-24 01:12:41,597 - INFO - aiogram.event - Update id=902943733 is not handled. Duration 25 ms by bot id=8657485502
+2026-03-24 01:12:41,597 - ERROR - aiogram.event - Cause exception while process update id=902943733 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:41,767 - INFO - aiogram.middlewares - Answer to callback query id=1083679490788997815
+2026-03-24 01:12:41,803 - INFO - aiogram.event - Update id=902943734 is not handled. Duration 38 ms by bot id=8657485502
+2026-03-24 01:12:41,803 - ERROR - aiogram.event - Cause exception while process update id=902943734 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:41,907 - INFO - aiogram.middlewares - Answer to callback query id=1083679492325916860
+2026-03-24 01:12:41,935 - INFO - aiogram.event - Update id=902943735 is not handled. Duration 30 ms by bot id=8657485502
+2026-03-24 01:12:41,935 - ERROR - aiogram.event - Cause exception while process update id=902943735 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:12:42,084 - INFO - aiogram.middlewares - Answer to callback query id=1083679489833876754
+2026-03-24 01:12:42,108 - INFO - aiogram.event - Update id=902943736 is not handled. Duration 27 ms by bot id=8657485502
+2026-03-24 01:12:42,108 - ERROR - aiogram.event - Cause exception while process update id=902943736 by bot id=8657485502
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/root/kakoi/middlewares/ban.py", line 49, in ban_middleware
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/utils/callback_answer.py", line 171, in __call__
+    return await handler(event, data)
+  File "/usr/local/lib/python3.8/dist-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/root/kakoi/handlers/admin.py", line 159, in trial_accept
+    vpn_url = await create_subscription(user_id, trial_plan, plan_suffix=" (пробный, db=db, panel=panel)")
+TypeError: create_subscription() missing 2 required positional arguments: 'db' and 'panel'
+2026-03-24 01:13:08,167 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-24 01:13:08,167 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:13:08,167 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-24 01:13:40,378 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-24 01:13:40,385 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-24 01:13:40,445 - INFO - __main__ - Бот запущен
+2026-03-24 01:13:40,446 - INFO - aiogram.dispatcher - Start polling
+2026-03-24 01:13:40,457 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:14:21,946 - INFO - aiogram.event - Update id=902943737 is handled. Duration 118 ms by bot id=8657485502
+2026-03-24 01:14:23,285 - INFO - aiogram.event - Update id=902943738 is handled. Duration 94 ms by bot id=8657485502
+2026-03-24 01:14:24,896 - INFO - aiogram.event - Update id=902943739 is not handled. Duration 2 ms by bot id=8657485502
+2026-03-24 01:14:36,338 - INFO - aiogram.event - Update id=902943740 is not handled. Duration 2 ms by bot id=8657485502
+2026-03-24 01:14:40,130 - INFO - aiogram.middlewares - Answer to callback query id=1083679491705641351
+2026-03-24 01:14:40,152 - INFO - aiogram.event - Update id=902943741 is handled. Duration 189 ms by bot id=8657485502
+2026-03-24 01:14:40,781 - INFO - aiogram.event - Update id=902943742 is handled. Duration 21 ms by bot id=8657485502
+2026-03-24 01:14:42,963 - INFO - aiogram.event - Update id=902943743 is handled. Duration 78 ms by bot id=8657485502
+2026-03-24 01:14:44,737 - INFO - aiogram.event - Update id=902943744 is handled. Duration 357 ms by bot id=8657485502
+2026-03-24 01:14:46,866 - INFO - aiogram.event - Update id=902943745 is handled. Duration 86 ms by bot id=8657485502
+2026-03-24 01:14:48,165 - INFO - aiogram.event - Update id=902943746 is handled. Duration 97 ms by bot id=8657485502
+2026-03-24 01:15:00,783 - INFO - aiogram.event - Update id=902943747 is handled. Duration 278 ms by bot id=8657485502
+2026-03-24 01:15:01,729 - INFO - aiogram.event - Update id=902943748 is handled. Duration 81 ms by bot id=8657485502
+2026-03-24 01:15:06,380 - INFO - aiogram.event - Update id=902943749 is handled. Duration 82 ms by bot id=8657485502
+2026-03-24 01:15:09,949 - INFO - aiogram.event - Update id=902943750 is handled. Duration 122 ms by bot id=8657485502
+2026-03-24 01:15:13,889 - INFO - aiogram.event - Update id=902943751 is handled. Duration 57 ms by bot id=8657485502
+2026-03-24 01:15:16,901 - INFO - aiogram.event - Update id=902943752 is handled. Duration 190 ms by bot id=8657485502
+2026-03-24 01:15:23,553 - INFO - aiogram.event - Update id=902943753 is not handled. Duration 3 ms by bot id=8657485502
+2026-03-24 01:15:42,903 - INFO - aiogram.event - Update id=902943754 is not handled. Duration 2 ms by bot id=8657485502
+2026-03-24 01:15:58,936 - INFO - aiogram.event - Update id=902943755 is handled. Duration 125 ms by bot id=8657485502
+2026-03-24 01:16:02,234 - INFO - aiogram.event - Update id=902943756 is handled. Duration 102 ms by bot id=8657485502
+2026-03-24 01:16:04,995 - INFO - aiogram.event - Update id=902943757 is handled. Duration 95 ms by bot id=8657485502
+2026-03-24 01:16:06,958 - INFO - aiogram.event - Update id=902943758 is handled. Duration 93 ms by bot id=8657485502
+2026-03-24 01:16:11,536 - INFO - aiogram.event - Update id=902943759 is handled. Duration 95 ms by bot id=8657485502
+2026-03-24 01:16:15,288 - INFO - aiogram.middlewares - Answer to callback query id=1083679490061212231
+2026-03-24 01:16:15,316 - INFO - aiogram.event - Update id=902943760 is handled. Duration 147 ms by bot id=8657485502
+2026-03-24 01:16:37,113 - INFO - aiohttp.access - 149.86.227.60 [24/Mar/2026:01:16:37 +0400] "GET / HTTP/1.1" 404 174 "-" "Mozilla/5.0"
+2026-03-24 01:17:04,129 - INFO - aiogram.event - Update id=902943761 is handled. Duration 96 ms by bot id=8657485502
+2026-03-24 01:17:07,625 - INFO - aiogram.event - Update id=902943762 is handled. Duration 81 ms by bot id=8657485502
+2026-03-24 01:17:20,874 - INFO - aiogram.event - Update id=902943763 is handled. Duration 73 ms by bot id=8657485502
+2026-03-24 01:17:33,902 - INFO - aiogram.event - Update id=902943764 is handled. Duration 79 ms by bot id=8657485502
+2026-03-24 01:17:35,505 - INFO - aiogram.event - Update id=902943765 is handled. Duration 278 ms by bot id=8657485502
+2026-03-24 01:17:39,626 - INFO - aiogram.event - Update id=902943766 is handled. Duration 69 ms by bot id=8657485502
+2026-03-24 01:17:42,760 - INFO - aiogram.middlewares - Answer to callback query id=1083679491330072098
+2026-03-24 01:17:42,779 - INFO - aiogram.event - Update id=902943767 is handled. Duration 572 ms by bot id=8657485502
+2026-03-24 01:17:44,314 - INFO - aiogram.event - Update id=902943768 is handled. Duration 76 ms by bot id=8657485502
+2026-03-24 01:17:45,250 - INFO - aiogram.event - Update id=902943769 is handled. Duration 71 ms by bot id=8657485502
+2026-03-24 01:20:07,774 - INFO - aiogram.event - Update id=902943770 is handled. Duration 186 ms by bot id=8657485502
+2026-03-24 01:20:14,377 - INFO - aiogram.event - Update id=902943771 is handled. Duration 92 ms by bot id=8657485502
+2026-03-24 01:20:17,543 - INFO - aiogram.event - Update id=902943772 is not handled. Duration 2 ms by bot id=8657485502
+2026-03-24 01:20:36,001 - INFO - aiogram.event - Update id=902943773 is handled. Duration 109 ms by bot id=8657485502
+2026-03-24 01:21:01,670 - INFO - aiogram.event - Update id=902943774 is handled. Duration 126 ms by bot id=8657485502
+2026-03-24 01:21:04,713 - INFO - aiogram.event - Update id=902943775 is handled. Duration 100 ms by bot id=8657485502
+2026-03-24 01:21:09,206 - INFO - aiogram.event - Update id=902943776 is handled. Duration 91 ms by bot id=8657485502
+2026-03-24 01:21:13,537 - INFO - aiogram.event - Update id=902943777 is handled. Duration 84 ms by bot id=8657485502
+2026-03-24 01:21:19,231 - INFO - aiogram.event - Update id=902943778 is handled. Duration 86 ms by bot id=8657485502
+2026-03-24 01:21:32,161 - INFO - aiogram.middlewares - Answer to callback query id=3422518448619805338
+2026-03-24 01:21:32,186 - INFO - aiogram.event - Update id=902943779 is handled. Duration 131 ms by bot id=8657485502
+2026-03-24 01:21:34,600 - INFO - aiogram.event - Update id=902943780 is handled. Duration 91 ms by bot id=8657485502
+2026-03-24 01:21:38,337 - INFO - aiogram.event - Update id=902943781 is handled. Duration 90 ms by bot id=8657485502
+2026-03-24 01:22:06,694 - INFO - aiogram.event - Update id=902943782 is not handled. Duration 2 ms by bot id=8657485502
+2026-03-24 01:22:25,261 - INFO - aiohttp.access - 204.76.203.212 [24/Mar/2026:01:22:25 +0400] "GET / HTTP/1.1" 404 174 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+2026-03-24 01:22:38,398 - INFO - aiogram.event - Update id=902943783 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-24 01:22:55,238 - INFO - aiogram.event - Update id=902943784 is not handled. Duration 1 ms by bot id=8657485502
+2026-03-24 01:23:02,125 - INFO - aiogram.event - Update id=902943785 is handled. Duration 104 ms by bot id=8657485502
+2026-03-24 01:23:03,294 - INFO - aiogram.event - Update id=902943786 is handled. Duration 76 ms by bot id=8657485502
+2026-03-24 01:23:07,581 - INFO - aiogram.event - Update id=902943787 is not handled. Duration 2 ms by bot id=8657485502
+2026-03-24 01:23:17,748 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-24 01:23:17,748 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:23:17,749 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-24 01:23:22,469 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-24 01:23:22,475 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-24 01:23:22,541 - INFO - __main__ - Бот запущен
+2026-03-24 01:23:22,542 - INFO - aiogram.dispatcher - Start polling
+2026-03-24 01:23:22,556 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:23:26,533 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:23:26,533 - INFO - services.panel - Найдено 0 клиентов по base_email='user_796867173@kakoitovpn'
+2026-03-24 01:23:26,534 - INFO - services.panel - Клиенты с частью email 'user_796867173@kakoitovpn' не найдены, ничего не удаляем
+2026-03-24 01:23:26,537 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:23:26,547 - INFO - services.panel - Клиент user_796867173@kakoitovpn успешно создан в inbound 1 (vless)
+2026-03-24 01:23:26,656 - INFO - aiogram.middlewares - Answer to callback query id=3422518450779858526
+2026-03-24 01:23:26,737 - INFO - aiogram.event - Update id=902943788 is handled. Duration 337 ms by bot id=8657485502
+2026-03-24 01:24:43,224 - INFO - aiogram.event - Update id=902943789 is handled. Duration 76 ms by bot id=8657485502
+2026-03-24 01:24:44,618 - INFO - aiogram.event - Update id=902943790 is handled. Duration 80 ms by bot id=8657485502
+2026-03-24 01:24:48,059 - INFO - aiogram.event - Update id=902943791 is handled. Duration 86 ms by bot id=8657485502
+2026-03-24 01:24:49,922 - INFO - aiogram.event - Update id=902943792 is handled. Duration 70 ms by bot id=8657485502
+2026-03-24 01:26:18,826 - INFO - aiogram.event - Update id=902943793 is handled. Duration 164 ms by bot id=8657485502
+2026-03-24 01:26:20,255 - INFO - aiogram.event - Update id=902943794 is handled. Duration 98 ms by bot id=8657485502
+2026-03-24 01:27:29,183 - INFO - aiogram.event - Update id=902943795 is handled. Duration 116 ms by bot id=8657485502
+2026-03-24 01:27:30,654 - INFO - aiogram.event - Update id=902943796 is handled. Duration 91 ms by bot id=8657485502
+2026-03-24 01:29:43,329 - INFO - aiohttp.access - 104.236.88.138 [24/Mar/2026:01:29:43 +0400] "GET / HTTP/1.1" 404 174 "-" "-"
+2026-03-24 01:31:30,317 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-24 01:31:30,318 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:31:30,318 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-24 01:31:35,378 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-24 01:31:35,386 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-24 01:31:35,451 - INFO - __main__ - Бот запущен
+2026-03-24 01:31:35,452 - INFO - aiogram.dispatcher - Start polling
+2026-03-24 01:31:35,464 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:31:45,121 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:31:45,124 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:31:45,277 - INFO - aiogram.event - Update id=902943797 is handled. Duration 159 ms by bot id=8657485502
+2026-03-24 01:31:51,446 - INFO - aiogram.event - Update id=902943798 is handled. Duration 76 ms by bot id=8657485502
+2026-03-24 01:31:53,079 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:31:53,082 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:31:53,155 - INFO - aiogram.event - Update id=902943799 is handled. Duration 79 ms by bot id=8657485502
+2026-03-24 01:31:53,850 - INFO - aiogram.event - Update id=902943800 is handled. Duration 75 ms by bot id=8657485502
+2026-03-24 01:31:55,782 - INFO - aiogram.middlewares - Answer to callback query id=3412005761697317651
+2026-03-24 01:31:55,800 - INFO - aiogram.event - Update id=902943801 is handled. Duration 655 ms by bot id=8657485502
+2026-03-24 01:31:58,468 - INFO - aiogram.middlewares - Answer to callback query id=3412005760230939648
+2026-03-24 01:31:58,486 - INFO - aiogram.event - Update id=902943802 is handled. Duration 72 ms by bot id=8657485502
+2026-03-24 01:31:59,115 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:31:59,139 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:31:59,202 - INFO - aiogram.middlewares - Answer to callback query id=3412005762347235697
+2026-03-24 01:31:59,220 - INFO - aiogram.event - Update id=902943803 is handled. Duration 110 ms by bot id=8657485502
+2026-03-24 01:32:00,550 - INFO - aiogram.event - Update id=902943804 is handled. Duration 77 ms by bot id=8657485502
+2026-03-24 01:32:02,787 - INFO - aiogram.event - Update id=902943805 is handled. Duration 76 ms by bot id=8657485502
+2026-03-24 01:32:05,703 - INFO - aiogram.event - Update id=902943806 is handled. Duration 156 ms by bot id=8657485502
+2026-03-24 01:32:06,931 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:32:06,932 - INFO - services.panel - Найдено 1 клиентов по base_email='user_794419497@kakoitovpn'
+2026-03-24 01:32:06,939 - INFO - services.panel - Клиент email=hzuser_794419497@kakoitovpn (inboundId=1, protocol=vless) успешно удалён
+2026-03-24 01:32:06,941 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:32:06,948 - INFO - services.panel - Клиент user_794419497@kakoitovpn успешно создан в inbound 1 (vless)
+2026-03-24 01:32:07,052 - INFO - aiogram.middlewares - Answer to callback query id=3412005760569315053
+2026-03-24 01:32:07,133 - INFO - aiogram.event - Update id=902943807 is handled. Duration 205 ms by bot id=8657485502
+2026-03-24 01:32:08,371 - INFO - aiogram.middlewares - Answer to callback query id=3412005760189906597
+2026-03-24 01:32:08,420 - INFO - aiogram.event - Update id=902943808 is handled. Duration 191 ms by bot id=8657485502
+2026-03-24 01:32:12,766 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:32:12,845 - INFO - aiogram.event - Update id=902943809 is handled. Duration 85 ms by bot id=8657485502
+2026-03-24 01:32:23,038 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-24 01:32:23,038 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:32:23,039 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-24 01:32:37,699 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-24 01:32:37,706 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-24 01:32:37,781 - INFO - __main__ - Бот запущен
+2026-03-24 01:32:37,782 - INFO - aiogram.dispatcher - Start polling
+2026-03-24 01:32:37,797 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:32:44,174 - INFO - aiogram.event - Update id=902943810 is handled. Duration 110 ms by bot id=8657485502
+2026-03-24 01:32:45,449 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:32:45,452 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:32:45,538 - INFO - aiogram.event - Update id=902943811 is handled. Duration 93 ms by bot id=8657485502
+2026-03-24 01:32:49,551 - INFO - aiogram.event - Update id=902943812 is handled. Duration 158 ms by bot id=8657485502
+2026-03-24 01:32:52,362 - INFO - aiogram.event - Update id=902943813 is handled. Duration 260 ms by bot id=8657485502
+2026-03-24 01:32:53,095 - INFO - aiogram.event - Update id=902943814 is handled. Duration 89 ms by bot id=8657485502
+2026-03-24 01:32:55,008 - INFO - aiogram.middlewares - Answer to callback query id=3412005759732170460
+2026-03-24 01:32:55,031 - INFO - aiogram.event - Update id=902943815 is handled. Duration 123 ms by bot id=8657485502
+2026-03-24 01:35:48,614 - WARNING - aiogram.dispatcher - Received SIGINT signal
+2026-03-24 01:35:48,614 - INFO - aiogram.dispatcher - Polling stopped for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:35:48,615 - INFO - aiogram.dispatcher - Polling stopped
+2026-03-24 01:35:53,801 - INFO - services.panel - Успешная аутентификация в панели 3X-UI
+2026-03-24 01:35:53,808 - INFO - services.webhook - ITPAY webhook: 0.0.0.0:8080/itpay/webhook
+2026-03-24 01:35:53,885 - INFO - __main__ - Бот запущен
+2026-03-24 01:35:53,886 - INFO - aiogram.dispatcher - Start polling
+2026-03-24 01:35:53,906 - INFO - aiogram.dispatcher - Run polling for bot @kakoivpn_bot id=8657485502 - 'Какой-то VPN Бот'
+2026-03-24 01:36:01,230 - INFO - aiogram.event - Update id=902943816 is handled. Duration 106 ms by bot id=8657485502
+2026-03-24 01:36:06,146 - INFO - aiogram.event - Update id=902943817 is handled. Duration 105 ms by bot id=8657485502
+2026-03-24 01:36:07,717 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:36:07,718 - INFO - services.panel - Найдено 1 клиентов по base_email='user_794419497@kakoitovpn'
+2026-03-24 01:36:07,734 - INFO - services.panel - Клиент email=pFuser_794419497@kakoitovpn (inboundId=1, protocol=vless) успешно удалён
+2026-03-24 01:36:07,737 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:36:07,745 - INFO - services.panel - Клиент user_794419497@kakoitovpn успешно создан в inbound 1 (vless)
+2026-03-24 01:36:07,789 - INFO - aiogram.middlewares - Answer to callback query id=3412005759118709272
+2026-03-24 01:36:07,809 - INFO - aiogram.event - Update id=902943818 is handled. Duration 116 ms by bot id=8657485502
+2026-03-24 01:37:15,234 - INFO - aiogram.event - Update id=902943819 is handled. Duration 99 ms by bot id=8657485502
+2026-03-24 01:37:16,857 - INFO - aiogram.event - Update id=902943820 is handled. Duration 82 ms by bot id=8657485502
+2026-03-24 01:37:19,303 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:37:19,304 - INFO - services.panel - Найдено 0 клиентов по base_email='user_252313793@kakoitovpn'
+2026-03-24 01:37:19,304 - INFO - services.panel - Клиенты с частью email 'user_252313793@kakoitovpn' не найдены, ничего не удаляем
+2026-03-24 01:37:19,306 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 01:37:19,314 - INFO - services.panel - Клиент user_252313793@kakoitovpn успешно создан в inbound 1 (vless)
+2026-03-24 01:37:19,355 - INFO - aiogram.middlewares - Answer to callback query id=1083679493161748715
+2026-03-24 01:37:19,380 - INFO - aiogram.event - Update id=902943821 is handled. Duration 106 ms by bot id=8657485502
+2026-03-24 01:42:49,235 - INFO - aiogram.middlewares - Answer to callback query id=3422518449474644926
+2026-03-24 01:42:49,254 - INFO - aiogram.event - Update id=902943822 is handled. Duration 121 ms by bot id=8657485502
+2026-03-24 01:42:51,392 - INFO - aiogram.event - Update id=902943823 is handled. Duration 79 ms by bot id=8657485502
+2026-03-24 01:47:48,106 - INFO - aiogram.event - Update id=902943824 is handled. Duration 105 ms by bot id=8657485502
+2026-03-24 01:47:52,872 - INFO - aiogram.event - Update id=902943825 is handled. Duration 90 ms by bot id=8657485502
+2026-03-24 01:47:54,010 - INFO - aiohttp.access - 204.76.203.212 [24/Mar/2026:01:47:54 +0400] "GET / HTTP/1.1" 404 174 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"
+2026-03-24 01:47:59,948 - INFO - aiogram.event - Update id=902943826 is handled. Duration 101 ms by bot id=8657485502
+2026-03-24 01:48:13,127 - INFO - aiogram.event - Update id=902943827 is handled. Duration 41 ms by bot id=8657485502
+2026-03-24 01:48:14,881 - INFO - aiogram.event - Update id=902943828 is handled. Duration 33 ms by bot id=8657485502
+2026-03-24 01:48:17,328 - INFO - aiogram.event - Update id=902943829 is handled. Duration 54 ms by bot id=8657485502
+2026-03-24 01:48:19,231 - INFO - aiogram.event - Update id=902943830 is handled. Duration 87 ms by bot id=8657485502
+2026-03-24 01:48:42,897 - INFO - aiogram.event - Update id=902943831 is handled. Duration 143 ms by bot id=8657485502
+2026-03-24 01:49:52,084 - INFO - aiohttp.access - 68.183.49.79 [24/Mar/2026:01:49:52 +0400] "GET / HTTP/1.1" 404 174 "-" "-"
+2026-03-24 01:53:10,278 - INFO - aiohttp.access - 66.228.53.162 [24/Mar/2026:01:53:10 +0400] "GET / HTTP/1.1" 404 174 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+2026-03-24 02:00:10,420 - INFO - aiogram.event - Update id=902943832 is handled. Duration 110 ms by bot id=8657485502
+2026-03-24 02:00:16,449 - INFO - aiogram.event - Update id=902943833 is handled. Duration 85 ms by bot id=8657485502
+2026-03-24 02:00:20,100 - INFO - aiogram.event - Update id=902943834 is handled. Duration 81 ms by bot id=8657485502
+2026-03-24 02:05:53,816 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 02:05:53,932 - INFO - services.panel - Получено 1 inbounds
+2026-03-24 02:11:31,722 - INFO - aiohttp.access - 204.76.203.212 [24/Mar/2026:02:11:31 +0400] "GET / HTTP/1.1" 404 174 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46"

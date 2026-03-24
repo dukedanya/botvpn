@@ -109,6 +109,7 @@ async def reward_referrer_days(referrer_id: int, bonus_days: int, db: Database, 
         if success:
             if pending > 0:
                 await db.clear_bonus_days_pending(referrer_id)
+            await db.add_ref_history(referrer_id, ref_user_id=0, bonus_days=total_bonus)
             await notify_user(
                 referrer_id,
                 f"🎉 Вам начислено {total_bonus} дней по реферальной программе!",
@@ -159,6 +160,7 @@ async def reward_referrer_percent(user_id: int, amount: float, db: Database) -> 
     # Начисляем первому уровню (25%)
     level1_amount = amount * Config.REF_PERCENT_LEVEL1 / 100
     await db.add_balance(referrer_id, level1_amount)
+    await db.add_ref_history(referrer_id, ref_user_id=user_id, amount=level1_amount)
     await notify_user(
         referrer_id,
         f"🎉 Вам начислено {level1_amount:.2f} ₽ на баланс за реферала!",
@@ -175,6 +177,18 @@ async def reward_referrer_percent(user_id: int, amount: float, db: Database) -> 
                 level2_id,
                 f"🎉 Вам начислено {level2_amount:.2f} ₽ на баланс за реферала второго уровня!",
             )
+
+            # Третий уровень
+            referrer2 = await db.get_user(level2_id)
+            if referrer2 and referrer2.get("ref_by"):
+                level3_id = referrer2["ref_by"]
+                if level3_id not in (user_id, referrer_id):
+                    level3_amount = amount * Config.REF_PERCENT_LEVEL3 / 100
+                    await db.add_balance(level3_id, level3_amount)
+                    await notify_user(
+                        level3_id,
+                        f"🎉 Вам начислено {level3_amount:.2f} ₽ на баланс за реферала третьего уровня!",
+                    )
 
 
 # --- Фоновые задачи ---

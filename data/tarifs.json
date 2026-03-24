@@ -5,8 +5,8 @@
       "name": "Пробный",
       "price_rub": 0,
       "ip_limit": 1,
-      "traffic_gb": 10,
-      "duration_days": 3,
+      "traffic_gb": 1.0,
+      "duration_days": 1,
       "description": "NL",
       "active": true,
       "sort": 1
@@ -14,7 +14,7 @@
     {
       "id": "basic",
       "name": "Месяц",
-      "price_rub": 1,
+      "price_rub": 200,
       "ip_limit": 5,
       "traffic_gb": 1000,
       "duration_days": 30,

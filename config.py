@@ -29,6 +29,7 @@ class Config:
     REF_BONUS_DAYS: int = int(os.getenv("REF_BONUS_DAYS", "7"))
     REF_PERCENT_LEVEL1: float = float(os.getenv("REF_PERCENT_LEVEL1", "25"))
     REF_PERCENT_LEVEL2: float = float(os.getenv("REF_PERCENT_LEVEL2", "10"))
+    REF_PERCENT_LEVEL3: float = float(os.getenv("REF_PERCENT_LEVEL3", "5"))
     MIN_WITHDRAW: float = float(os.getenv("MIN_WITHDRAW", "300"))
     PANEL_EMAIL_DOMAIN: str = os.getenv("PANEL_EMAIL_DOMAIN", "vpnbot")
     ITPAY_PUBLIC_ID: str = os.getenv("ITPAY_PUBLIC_ID", "")

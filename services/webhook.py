@@ -86,9 +86,7 @@ async def itpay_webhook_handler(request: web.Request) -> web.Response:
 
     bonus_days = 0
     if ref_by and not ref_rewarded:
-        referrer = await db.get_user(ref_by)
-        if referrer and referrer.get("ref_system_type") == 1:
-            bonus_days = Config.REF_BONUS_DAYS
+        bonus_days = Config.REF_BONUS_DAYS
 
     vpn_url = await create_subscription(user_id, plan, db=db, panel=panel, extra_days=bonus_days)
 
@@ -104,6 +102,10 @@ async def itpay_webhook_handler(request: web.Request) -> web.Response:
             await db.mark_ref_rewarded(user_id)
 
         await db.update_payment_status(payment_id, "accepted")
+
+        if ref_by and not ref_rewarded and bonus_days > 0:
+            from utils.helpers import notify_user
+            await notify_user(user_id, f"🎁 Вам начислено <b>+{bonus_days} дней</b> бесплатно по реферальной программе!")
 
         msg_id = payment.get("msg_id")
         notify_text = (

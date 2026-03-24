@@ -27,13 +27,18 @@ def main_menu_keyboard(is_admin: bool = False) -> ReplyKeyboardMarkup:
 def back_keyboard() -> ReplyKeyboardMarkup:
     return ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="⬅️ Назад")]], resize_keyboard=True)
 
-def profile_keyboard(has_subscription: bool = False) -> ReplyKeyboardMarkup:
+def profile_keyboard(has_subscription: bool = False, is_frozen: bool = False) -> ReplyKeyboardMarkup:
     button_text = "💰 Продлить подписку" if has_subscription else "💰 Оформить подписку"
     keyboard = [
         [KeyboardButton(text=button_text)],
         [KeyboardButton(text="🤝 Реферальная система")],
-        [KeyboardButton(text="⬅️ Назад")],
     ]
+    if has_subscription:
+        if is_frozen:
+            keyboard.append([KeyboardButton(text="▶️ Разморозить подписку")])
+        else:
+            keyboard.append([KeyboardButton(text="⏸ Заморозить подписку")])
+    keyboard.append([KeyboardButton(text="⬅️ Назад")])
     return ReplyKeyboardMarkup(keyboard=keyboard, resize_keyboard=True)
 
 def subscriptions_keyboard(has_subscription: bool = False) -> ReplyKeyboardMarkup:
